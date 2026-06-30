@@ -175,14 +175,6 @@ button:disabled {
   transform: translateZ(0);
   will-change: transform, backdrop-filter;
 }
-  border-radius: 20px;
-  padding: var(--space-1);
-  gap: var(--space-1);
-  box-shadow: var(--shadow-md);
-  width: 38px;
-  top: 75px;
-  position: fixed;
-}
 
 .left-map-toolbar .icon-button {
   border-radius: var(--radius-full);
@@ -466,7 +458,7 @@ label {
   overflow: hidden;
 }
 
-.top-bar::before {
+.top-bar::after {
   content: "";
   position: absolute;
   inset: 0;
@@ -476,7 +468,6 @@ label {
   -webkit-backdrop-filter: blur(28px) saturate(160%) brightness(1.02);
   transform: translateZ(0);
   will-change: transform, backdrop-filter;
-}
 }
 
 /* Premium top accent line */
@@ -563,11 +554,6 @@ label {
   -webkit-backdrop-filter: blur(28px) saturate(160%) brightness(1.02);
   transform: translateZ(0);
   will-change: transform, backdrop-filter;
-}
-  border-radius: var(--radius-xl);
-  box-shadow: var(--shadow-md);
-  overflow: hidden;
-  transition: transform var(--transition-normal), opacity var(--transition-normal);
 }
 
 @keyframes slide-in-left {
@@ -946,11 +932,6 @@ label {
   transform: translateZ(0);
   will-change: transform, backdrop-filter;
 }
-  border-radius: var(--radius-full);
-  box-shadow: var(--shadow-md);
-  padding: 4px var(--space-3);
-  gap: 4px;
-}
 
 .map-toolbar .icon-button {
   border-radius: var(--radius-full);
@@ -1044,14 +1025,6 @@ label {
   -webkit-backdrop-filter: blur(28px) saturate(160%) brightness(1.02);
   transform: translateZ(0);
   will-change: transform, backdrop-filter;
-}
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--color-text-secondary);
-  cursor: pointer;
-  transition: all var(--transition-normal);
-  box-shadow: var(--shadow-md);
 }
 
 .toggle-button:hover {
