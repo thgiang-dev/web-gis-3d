@@ -180,7 +180,8 @@ export async function renderSpatialFeatures(
         geometryType: "polyline",
         renderer: createUniqueValueRenderer(baseGraphicsByGeom.polyline),
         elevationInfo: {
-          mode: "relative-to-ground"
+          mode: "relative-to-ground",
+          offset: (features[0]?.style as any)?.elevationOffset ?? 0
         }
       })
       createdLayers.push(polylineLayer)
@@ -199,7 +200,8 @@ export async function renderSpatialFeatures(
         geometryType: "point",
         renderer: createUniqueValueRenderer(baseGraphicsByGeom.point),
         elevationInfo: {
-          mode: "relative-to-ground"
+          mode: "relative-to-ground",
+          offset: (features[0]?.style as any)?.elevationOffset ?? 0
         },
         featureReduction: isClusteringEnabled ? { type: "selection" } as any : null
       })
@@ -218,7 +220,8 @@ export async function renderSpatialFeatures(
         geometryType: "point",
         renderer: createUniqueValueRenderer(modelGraphics),
         elevationInfo: {
-          mode: "relative-to-ground"
+          mode: "relative-to-ground",
+          offset: (features[0]?.style as any)?.elevationOffset ?? 0
         }
       })
       createdLayers.push(modelLayer)

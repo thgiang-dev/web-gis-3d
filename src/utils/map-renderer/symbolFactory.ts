@@ -149,7 +149,12 @@ export function createHighlightSymbol(feature: NormalizedSpatialFeature): Highli
 }
 
 export function createModelSymbol3D(model3D: ResolvedModel3DConfig): PointSymbol3D | null {
-  if (!model3D.modelUrl || !isBlobUrlValid(model3D.modelUrl)) {
+  if (!model3D.modelUrl) {
+    return null
+  }
+
+  // Only validate blob URLs from user uploads
+  if (model3D.modelUrl.startsWith('blob:') && !isBlobUrlValid(model3D.modelUrl)) {
     return null
   }
 

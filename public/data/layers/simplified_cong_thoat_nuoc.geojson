@@ -1,0 +1,2713 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": 1,
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.4715597750764,
+            10.305661025496134
+          ],
+          [
+            105.47368891303695,
+            10.307245204017654
+          ],
+          [
+            105.4754154925316,
+            10.308588254837996
+          ],
+          [
+            105.4779509110678,
+            10.310561661839795
+          ],
+          [
+            105.47807627491981,
+            10.310659234814526
+          ]
+        ]
+      },
+      "properties": {
+        "OBJECTID": 1,
+        "ChieuDai": 902.8,
+        "DoDoc": 0.333,
+        "DoSau": null,
+        "VatLieu": null,
+        "LoaiCongThoatNuoc": 2,
+        "NgayCapNhat": 1629936000000,
+        "NguoiCapNhat": "Nguyễn Vân Anh",
+        "DonViCapNhat": 2,
+        "DonViQuanLy": 2,
+        "GhiChu": "Cống thoát nước theo quy hoạch phân khu",
+        "GiaiDoanQuyHoach": 5,
+        "LuuLuong": null,
+        "VanToc": null,
+        "DuongKinh": 300,
+        "MaPhuongXa": "31210",
+        "MaQuanHuyen": "923",
+        "MaDoiTuong": null,
+        "MaDuAn": "20.92300000.00001",
+        "SHAPE.STLength()": 902.8296513489437
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 2,
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.48467021440574,
+            10.314243408531317
+          ],
+          [
+            105.48472928297308,
+            10.31423913284724
+          ],
+          [
+            105.48487611768515,
+            10.3142288060495
+          ],
+          [
+            105.4852332150997,
+            10.314205497384132
+          ],
+          [
+            105.48574285987115,
+            10.314199215425354
+          ],
+          [
+            105.48720193459391,
+            10.314194991460763
+          ]
+        ]
+      },
+      "properties": {
+        "OBJECTID": 2,
+        "ChieuDai": 277.4,
+        "DoDoc": null,
+        "DoSau": null,
+        "VatLieu": null,
+        "LoaiCongThoatNuoc": 2,
+        "NgayCapNhat": 1629936000000,
+        "NguoiCapNhat": "Nguyễn Vân Anh",
+        "DonViCapNhat": 2,
+        "DonViQuanLy": 2,
+        "GhiChu": "Cống thoát nước theo quy hoạch phân khu",
+        "GiaiDoanQuyHoach": 5,
+        "LuuLuong": null,
+        "VanToc": null,
+        "DuongKinh": null,
+        "MaPhuongXa": "31210",
+        "MaQuanHuyen": "923",
+        "MaDoiTuong": null,
+        "MaDuAn": "20.92300000.00001",
+        "SHAPE.STLength()": 277.43471115889065
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3,
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.48049117238959,
+            10.311576330609386
+          ],
+          [
+            105.48398660123756,
+            10.310964474009419
+          ],
+          [
+            105.48407144508191,
+            10.31094962212212
+          ]
+        ]
+      },
+      "properties": {
+        "OBJECTID": 3,
+        "ChieuDai": 398.2,
+        "DoDoc": 0.333,
+        "DoSau": null,
+        "VatLieu": null,
+        "LoaiCongThoatNuoc": 2,
+        "NgayCapNhat": 1629936000000,
+        "NguoiCapNhat": "Nguyễn Vân Anh",
+        "DonViCapNhat": 2,
+        "DonViQuanLy": 2,
+        "GhiChu": "Cống thoát nước theo quy hoạch phân khu",
+        "GiaiDoanQuyHoach": 5,
+        "LuuLuong": null,
+        "VanToc": null,
+        "DuongKinh": 300,
+        "MaPhuongXa": "31210",
+        "MaQuanHuyen": "923",
+        "MaDoiTuong": null,
+        "MaDuAn": "20.92300000.00001",
+        "SHAPE.STLength()": 398.21245135171654
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4,
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.48557066631423,
+            10.310702201216024
+          ],
+          [
+            105.486616630119,
+            10.310531324345213
+          ],
+          [
+            105.4867391662944,
+            10.310511305723859
+          ],
+          [
+            105.48827989405792,
+            10.31025959301228
+          ],
+          [
+            105.48851895974309,
+            10.310220535508973
+          ],
+          [
+            105.48861732583414,
+            10.310204464927056
+          ]
+        ]
+      },
+      "properties": {
+        "OBJECTID": 4,
+        "ChieuDai": 338.2,
+        "DoDoc": 0.333,
+        "DoSau": null,
+        "VatLieu": null,
+        "LoaiCongThoatNuoc": 2,
+        "NgayCapNhat": 1629936000000,
+        "NguoiCapNhat": "Nguyễn Vân Anh",
+        "DonViCapNhat": 2,
+        "DonViQuanLy": 2,
+        "GhiChu": "Cống thoát nước theo quy hoạch phân khu",
+        "GiaiDoanQuyHoach": 5,
+        "LuuLuong": null,
+        "VanToc": null,
+        "DuongKinh": 300,
+        "MaPhuongXa": "31210",
+        "MaQuanHuyen": "923",
+        "MaDoiTuong": null,
+        "MaDuAn": "20.92300000.00001",
+        "SHAPE.STLength()": 338.20036648005777
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5,
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.4891761308643,
+            10.309759141237135
+          ],
+          [
+            105.49233338673665,
+            10.307297487680405
+          ]
+        ]
+      },
+      "properties": {
+        "OBJECTID": 5,
+        "ChieuDai": 440.1,
+        "DoDoc": 0.333,
+        "DoSau": null,
+        "VatLieu": null,
+        "LoaiCongThoatNuoc": 2,
+        "NgayCapNhat": 1629936000000,
+        "NguoiCapNhat": "Nguyễn Vân Anh",
+        "DonViCapNhat": 2,
+        "DonViQuanLy": 2,
+        "GhiChu": "Cống thoát nước theo quy hoạch phân khu",
+        "GiaiDoanQuyHoach": 5,
+        "LuuLuong": null,
+        "VanToc": null,
+        "DuongKinh": 300,
+        "MaPhuongXa": "31210",
+        "MaQuanHuyen": "923",
+        "MaDoiTuong": null,
+        "MaDuAn": "20.92300000.00001",
+        "SHAPE.STLength()": 440.12462161111824
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6,
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.48563306222101,
+            10.301856886757928
+          ],
+          [
+            105.49233338673665,
+            10.307297487680405
+          ],
+          [
+            105.49419289752964,
+            10.308807334222223
+          ],
+          [
+            105.49444942041411,
+            10.309015618031713
+          ]
+        ]
+      },
+      "properties": {
+        "OBJECTID": 6,
+        "ChieuDai": 1248.7,
+        "DoDoc": 0.333,
+        "DoSau": null,
+        "VatLieu": null,
+        "LoaiCongThoatNuoc": 2,
+        "NgayCapNhat": 1629936000000,
+        "NguoiCapNhat": "Nguyễn Vân Anh",
+        "DonViCapNhat": 2,
+        "DonViQuanLy": 2,
+        "GhiChu": "Cống thoát nước theo quy hoạch phân khu",
+        "GiaiDoanQuyHoach": 5,
+        "LuuLuong": null,
+        "VanToc": null,
+        "DuongKinh": 300,
+        "MaPhuongXa": "31210",
+        "MaQuanHuyen": "923",
+        "MaDoiTuong": null,
+        "MaDuAn": "20.92300000.00001",
+        "SHAPE.STLength()": 1248.746110578908
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 7,
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.50689988202852,
+            10.299611171769548
+          ],
+          [
+            105.50682284518186,
+            10.29954272719488
+          ],
+          [
+            105.50669342346171,
+            10.29942773917878
+          ],
+          [
+            105.50366864625748,
+            10.296740269328449
+          ],
+          [
+            105.50342305612749,
+            10.296522062523081
+          ],
+          [
+            105.49932806467714,
+            10.292883592998262
+          ],
+          [
+            105.49587679914902,
+            10.289816975035395
+          ],
+          [
+            105.49559942461757,
+            10.289570509914078
+          ],
+          [
+            105.49420795628238,
+            10.283217270320339
+          ]
+        ]
+      },
+      "properties": {
+        "OBJECTID": 7,
+        "ChieuDai": 2381.9,
+        "DoDoc": null,
+        "DoSau": null,
+        "VatLieu": null,
+        "LoaiCongThoatNuoc": 2,
+        "NgayCapNhat": 1629936000000,
+        "NguoiCapNhat": "Nguyễn Vân Anh",
+        "DonViCapNhat": 2,
+        "DonViQuanLy": 2,
+        "GhiChu": "Cống thoát nước theo quy hoạch chung",
+        "GiaiDoanQuyHoach": 5,
+        "LuuLuong": null,
+        "VanToc": null,
+        "DuongKinh": null,
+        "MaPhuongXa": "31210",
+        "MaQuanHuyen": "923",
+        "MaDoiTuong": null,
+        "MaDuAn": "20.92300000.00001",
+        "SHAPE.STLength()": 2381.949473273837
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 8,
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.52483038444784,
+            10.274152904026261
+          ],
+          [
+            105.52483277585611,
+            10.27415209366639
+          ],
+          [
+            105.52533111610761,
+            10.27398304418285
+          ],
+          [
+            105.5261868220601,
+            10.273698382879637
+          ],
+          [
+            105.52627165753154,
+            10.273669050515423
+          ],
+          [
+            105.5263548260991,
+            10.273635280200436
+          ],
+          [
+            105.52643609578746,
+            10.27359716612747
+          ],
+          [
+            105.52651523991769,
+            10.273554814605008
+          ],
+          [
+            105.52969303768576,
+            10.271999520759074
+          ]
+        ]
+      },
+      "properties": {
+        "OBJECTID": 8,
+        "ChieuDai": 584.5,
+        "DoDoc": 0.333,
+        "DoSau": null,
+        "VatLieu": null,
+        "LoaiCongThoatNuoc": 2,
+        "NgayCapNhat": 1629936000000,
+        "NguoiCapNhat": "Nguyễn Vân Anh",
+        "DonViCapNhat": 2,
+        "DonViQuanLy": 2,
+        "GhiChu": "Cống thoát nước theo quy hoạch phân khu",
+        "GiaiDoanQuyHoach": 5,
+        "LuuLuong": null,
+        "VanToc": null,
+        "DuongKinh": 300,
+        "MaPhuongXa": "31207",
+        "MaQuanHuyen": "923",
+        "MaDoiTuong": null,
+        "MaDuAn": "20.92300000.00001",
+        "SHAPE.STLength()": 584.5356554466912
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 9,
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.48468636965414,
+            10.314340710393248
+          ],
+          [
+            105.4846713265156,
+            10.314257755557016
+          ],
+          [
+            105.48466884311087,
+            10.314244058856412
+          ],
+          [
+            105.48413031706417,
+            10.311274283757976
+          ],
+          [
+            105.4840883598161,
+            10.311042901297814
+          ],
+          [
+            105.48407144508191,
+            10.31094962212212
+          ],
+          [
+            105.48359427276803,
+            10.308318131168958
+          ],
+          [
+            105.48380221512892,
+            10.308081846737666
+          ],
+          [
+            105.48417355172276,
+            10.307659894688374
+          ]
+        ]
+      },
+      "properties": {
+        "OBJECTID": 9,
+        "ChieuDai": 773.3,
+        "DoDoc": 0.333,
+        "DoSau": null,
+        "VatLieu": null,
+        "LoaiCongThoatNuoc": 2,
+        "NgayCapNhat": 1629936000000,
+        "NguoiCapNhat": "Nguyễn Vân Anh",
+        "DonViCapNhat": 2,
+        "DonViQuanLy": 2,
+        "GhiChu": "Cống thoát nước theo quy hoạch phân khu",
+        "GiaiDoanQuyHoach": 5,
+        "LuuLuong": null,
+        "VanToc": null,
+        "DuongKinh": 300,
+        "MaPhuongXa": "31210",
+        "MaQuanHuyen": "923",
+        "MaDoiTuong": null,
+        "MaDuAn": "20.92300000.00001",
+        "SHAPE.STLength()": 773.3362621793163
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10,
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.47934354401434,
+            10.309026578705392
+          ],
+          [
+            105.48123228101942,
+            10.306707617221383
+          ],
+          [
+            105.48236704637289,
+            10.3053143494996
+          ],
+          [
+            105.48238960393644,
+            10.305286653676845
+          ]
+        ]
+      },
+      "properties": {
+        "OBJECTID": 10,
+        "ChieuDai": 531.4,
+        "DoDoc": 0.333,
+        "DoSau": null,
+        "VatLieu": null,
+        "LoaiCongThoatNuoc": 2,
+        "NgayCapNhat": 1629936000000,
+        "NguoiCapNhat": "Nguyễn Vân Anh",
+        "DonViCapNhat": 2,
+        "DonViQuanLy": 2,
+        "GhiChu": "Cống thoát nước theo quy hoạch phân khu",
+        "GiaiDoanQuyHoach": 5,
+        "LuuLuong": null,
+        "VanToc": null,
+        "DuongKinh": 300,
+        "MaPhuongXa": "31210",
+        "MaQuanHuyen": "923",
+        "MaDoiTuong": null,
+        "MaDuAn": "20.92300000.00001",
+        "SHAPE.STLength()": 531.4218314199117
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11,
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.50682348013551,
+            10.299541279580257
+          ],
+          [
+            105.50889697172002,
+            10.297105237312257
+          ],
+          [
+            105.51412147183878,
+            10.291135082159954
+          ],
+          [
+            105.51779930961538,
+            10.287431007209237
+          ],
+          [
+            105.51790341854878,
+            10.284501558872915
+          ],
+          [
+            105.51810935204337,
+            10.278706887126116
+          ],
+          [
+            105.51811177697546,
+            10.278638659776139
+          ],
+          [
+            105.51819254989589,
+            10.276365814631783
+          ],
+          [
+            105.51819331892989,
+            10.276344181919475
+          ],
+          [
+            105.5185764884644,
+            10.269310816321555
+          ]
+        ]
+      },
+      "properties": {
+        "OBJECTID": 11,
+        "ChieuDai": 3806.8,
+        "DoDoc": null,
+        "DoSau": null,
+        "VatLieu": null,
+        "LoaiCongThoatNuoc": 2,
+        "NgayCapNhat": 1629936000000,
+        "NguoiCapNhat": "Nguyễn Vân Anh",
+        "DonViCapNhat": 2,
+        "DonViQuanLy": 2,
+        "GhiChu": "Cống thoát nước theo quy hoạch chung",
+        "GiaiDoanQuyHoach": 5,
+        "LuuLuong": null,
+        "VanToc": null,
+        "DuongKinh": null,
+        "MaPhuongXa": "31210",
+        "MaQuanHuyen": "923",
+        "MaDoiTuong": null,
+        "MaDuAn": "20.92300000.00001",
+        "SHAPE.STLength()": 3806.763742444144
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12,
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.52482961083055,
+            10.274152120487814
+          ],
+          [
+            105.52016572296182,
+            10.275827756776657
+          ]
+        ]
+      },
+      "properties": {
+        "OBJECTID": 12,
+        "ChieuDai": 543.5,
+        "DoDoc": null,
+        "DoSau": null,
+        "VatLieu": null,
+        "LoaiCongThoatNuoc": 2,
+        "NgayCapNhat": 1629936000000,
+        "NguoiCapNhat": "Nguyễn Vân Anh",
+        "DonViCapNhat": 2,
+        "DonViQuanLy": 2,
+        "GhiChu": "Cống thoát nước theo quy hoạch chung",
+        "GiaiDoanQuyHoach": 5,
+        "LuuLuong": null,
+        "VanToc": null,
+        "DuongKinh": null,
+        "MaPhuongXa": "31207",
+        "MaQuanHuyen": "923",
+        "MaDoiTuong": null,
+        "MaDuAn": "20.92300000.00001",
+        "SHAPE.STLength()": 543.4560634435226
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 13,
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.53267905006912,
+            10.270413653954465
+          ],
+          [
+            105.53199935908923,
+            10.270518303672246
+          ],
+          [
+            105.53119071522404,
+            10.271138950915933
+          ],
+          [
+            105.53113821798087,
+            10.271224380058317
+          ],
+          [
+            105.5303489788725,
+            10.272508713335585
+          ],
+          [
+            105.53019691102843,
+            10.27297965052388
+          ],
+          [
+            105.53002636313302,
+            10.273507818001196
+          ],
+          [
+            105.52979367729216,
+            10.274541858655347
+          ],
+          [
+            105.52974163384343,
+            10.274773132995813
+          ],
+          [
+            105.5297187921326,
+            10.27483197620232
+          ],
+          [
+            105.52917032324817,
+            10.276244898507109
+          ],
+          [
+            105.5291326788137,
+            10.276341873349338
+          ],
+          [
+            105.52221968566438,
+            10.283288179898438
+          ],
+          [
+            105.51991880315019,
+            10.285544555224313
+          ]
+        ]
+      },
+      "properties": {
+        "OBJECTID": 13,
+        "ChieuDai": 2243.5,
+        "DoDoc": null,
+        "DoSau": null,
+        "VatLieu": null,
+        "LoaiCongThoatNuoc": 2,
+        "NgayCapNhat": 1629936000000,
+        "NguoiCapNhat": "Nguyễn Vân Anh",
+        "DonViCapNhat": 2,
+        "DonViQuanLy": 2,
+        "GhiChu": "Cống thoát nước theo quy hoạch chung",
+        "GiaiDoanQuyHoach": 5,
+        "LuuLuong": null,
+        "VanToc": null,
+        "DuongKinh": null,
+        "MaPhuongXa": "31212",
+        "MaQuanHuyen": "923",
+        "MaDoiTuong": null,
+        "MaDuAn": "20.92300000.00001",
+        "SHAPE.STLength()": 2243.4648415953934
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 14,
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.53166006720802,
+            10.262403426145143
+          ],
+          [
+            105.53209235288729,
+            10.261214094464046
+          ],
+          [
+            105.53421676330336,
+            10.25720702414718
+          ],
+          [
+            105.53439790117604,
+            10.256865356945356
+          ],
+          [
+            105.53480974143909,
+            10.255610389245291
+          ],
+          [
+            105.5348806511376,
+            10.255045684711513
+          ],
+          [
+            105.53488418864397,
+            10.25501751233482
+          ],
+          [
+            105.53497275769796,
+            10.254312178296923
+          ],
+          [
+            105.53500965048977,
+            10.254018373658923
+          ]
+        ]
+      },
+      "properties": {
+        "OBJECTID": 14,
+        "ChieuDai": 1006.5,
+        "DoDoc": null,
+        "DoSau": null,
+        "VatLieu": null,
+        "LoaiCongThoatNuoc": 2,
+        "NgayCapNhat": 1629936000000,
+        "NguoiCapNhat": "Nguyễn Vân Anh",
+        "DonViCapNhat": 2,
+        "DonViQuanLy": 2,
+        "GhiChu": "Cống thoát nước theo quy hoạch chung",
+        "GiaiDoanQuyHoach": 5,
+        "LuuLuong": null,
+        "VanToc": null,
+        "DuongKinh": null,
+        "MaPhuongXa": "31216",
+        "MaQuanHuyen": "923",
+        "MaDoiTuong": null,
+        "MaDuAn": "20.92300000.00001",
+        "SHAPE.STLength()": 1006.4574185405805
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 15,
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.53458852720792,
+            10.269783348669943
+          ],
+          [
+            105.53572317100051,
+            10.26934440271548
+          ],
+          [
+            105.53579550966283,
+            10.269271039267954
+          ],
+          [
+            105.5365319184063,
+            10.268524213716212
+          ],
+          [
+            105.53860280830838,
+            10.266026767222531
+          ],
+          [
+            105.54119580229202,
+            10.262899603027268
+          ],
+          [
+            105.54140635476335,
+            10.262652472884161
+          ],
+          [
+            105.5428771892282,
+            10.26092611311192
+          ],
+          [
+            105.54495696407994,
+            10.258484980535746
+          ],
+          [
+            105.54618795870056,
+            10.256940909630236
+          ],
+          [
+            105.54621733893725,
+            10.25690405652966
+          ],
+          [
+            105.54628699377318,
+            10.25681668499438
+          ],
+          [
+            105.54682011145646,
+            10.256147974426945
+          ],
+          [
+            105.54783057198168,
+            10.251219360725635
+          ]
+        ]
+      },
+      "properties": {
+        "OBJECTID": 15,
+        "ChieuDai": 2589.7,
+        "DoDoc": null,
+        "DoSau": null,
+        "VatLieu": null,
+        "LoaiCongThoatNuoc": 2,
+        "NgayCapNhat": 1629936000000,
+        "NguoiCapNhat": "Nguyễn Vân Anh",
+        "DonViCapNhat": 2,
+        "DonViQuanLy": 2,
+        "GhiChu": "Cống thoát nước theo quy hoạch chung",
+        "GiaiDoanQuyHoach": 5,
+        "LuuLuong": null,
+        "VanToc": null,
+        "DuongKinh": null,
+        "MaPhuongXa": "31219",
+        "MaQuanHuyen": "923",
+        "MaDoiTuong": null,
+        "MaDuAn": "20.92300000.00001",
+        "SHAPE.STLength()": 2589.700732057981
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 16,
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.53500965048977,
+            10.254018373658923
+          ],
+          [
+            105.5322680419802,
+            10.254365055185625
+          ],
+          [
+            105.53054110484116,
+            10.255166295812224
+          ],
+          [
+            105.52630358543834,
+            10.25944452497193
+          ],
+          [
+            105.52604989042484,
+            10.259693827792464
+          ],
+          [
+            105.52598511774669,
+            10.259757478180465
+          ],
+          [
+            105.51888569123162,
+            10.266733734151138
+          ]
+        ]
+      },
+      "properties": {
+        "OBJECTID": 16,
+        "ChieuDai": 2319.2,
+        "DoDoc": null,
+        "DoSau": null,
+        "VatLieu": null,
+        "LoaiCongThoatNuoc": 2,
+        "NgayCapNhat": 1629936000000,
+        "NguoiCapNhat": "Nguyễn Vân Anh",
+        "DonViCapNhat": 2,
+        "DonViQuanLy": 2,
+        "GhiChu": "Cống thoát nước theo quy hoạch chung",
+        "GiaiDoanQuyHoach": 5,
+        "LuuLuong": null,
+        "VanToc": null,
+        "DuongKinh": null,
+        "MaPhuongXa": "31216",
+        "MaQuanHuyen": "923",
+        "MaDoiTuong": null,
+        "MaDuAn": "20.92300000.00001",
+        "SHAPE.STLength()": 2319.20627617826
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 17,
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.51810935204337,
+            10.278706887126116
+          ],
+          [
+            105.51737423972827,
+            10.278935456259054
+          ],
+          [
+            105.5149684499276,
+            10.279683478216223
+          ],
+          [
+            105.51392715163996,
+            10.282341496073968
+          ],
+          [
+            105.51389080057311,
+            10.28243428387045
+          ],
+          [
+            105.51381365283204,
+            10.282524711457356
+          ],
+          [
+            105.51138773443682,
+            10.285368195108946
+          ],
+          [
+            105.51127776373508,
+            10.285497093475376
+          ],
+          [
+            105.51033901433765,
+            10.286597407545015
+          ],
+          [
+            105.51023853513301,
+            10.286715177877735
+          ],
+          [
+            105.51019367954504,
+            10.286767754521538
+          ],
+          [
+            105.50754811771466,
+            10.289868576053616
+          ],
+          [
+            105.50749044718516,
+            10.289936169375197
+          ],
+          [
+            105.50742596135699,
+            10.29001174967166
+          ],
+          [
+            105.50740391322296,
+            10.29003167163793
+          ],
+          [
+            105.50628317605496,
+            10.29104432266676
+          ],
+          [
+            105.50405641174478,
+            10.293087362723947
+          ],
+          [
+            105.50405277338012,
+            10.293090701042363
+          ]
+        ]
+      },
+      "properties": {
+        "OBJECTID": 17,
+        "ChieuDai": 2286.6,
+        "DoDoc": null,
+        "DoSau": null,
+        "VatLieu": null,
+        "LoaiCongThoatNuoc": 2,
+        "NgayCapNhat": 1629936000000,
+        "NguoiCapNhat": "Nguyễn Vân Anh",
+        "DonViCapNhat": 2,
+        "DonViQuanLy": 2,
+        "GhiChu": "Cống thoát nước theo quy hoạch chung",
+        "GiaiDoanQuyHoach": 5,
+        "LuuLuong": null,
+        "VanToc": null,
+        "DuongKinh": null,
+        "MaPhuongXa": "31212",
+        "MaQuanHuyen": "923",
+        "MaDoiTuong": null,
+        "MaDuAn": "20.92300000.00001",
+        "SHAPE.STLength()": 2286.6206625323634
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 18,
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.53164172842601,
+            10.263749661523137
+          ],
+          [
+            105.53096629316494,
+            10.264229786511159
+          ],
+          [
+            105.52947736596444,
+            10.265119725192339
+          ],
+          [
+            105.52935410271108,
+            10.265193399984737
+          ]
+        ]
+      },
+      "properties": {
+        "OBJECTID": 18,
+        "ChieuDai": 297.3,
+        "DoDoc": null,
+        "DoSau": null,
+        "VatLieu": null,
+        "LoaiCongThoatNuoc": 2,
+        "NgayCapNhat": 1629936000000,
+        "NguoiCapNhat": "Nguyễn Vân Anh",
+        "DonViCapNhat": 2,
+        "DonViQuanLy": 2,
+        "GhiChu": "Cống thoát nước theo quy hoạch chung",
+        "GiaiDoanQuyHoach": 5,
+        "LuuLuong": null,
+        "VanToc": null,
+        "DuongKinh": null,
+        "MaPhuongXa": "31207",
+        "MaQuanHuyen": "923",
+        "MaDoiTuong": null,
+        "MaDuAn": "20.92300000.00001",
+        "SHAPE.STLength()": 297.3450781160176
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 19,
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.52935410271108,
+            10.265193399984737
+          ],
+          [
+            105.52930618944067,
+            10.265238181337782
+          ],
+          [
+            105.52859532015047,
+            10.265902580865708
+          ],
+          [
+            105.52641997934101,
+            10.268567050321105
+          ],
+          [
+            105.52483277585611,
+            10.27415209366639
+          ],
+          [
+            105.52483206244645,
+            10.274154602895463
+          ],
+          [
+            105.5248015492808,
+            10.274261975080686
+          ],
+          [
+            105.52407066336872,
+            10.276833747245268
+          ],
+          [
+            105.52410551784503,
+            10.276861484961085
+          ],
+          [
+            105.52430845714696,
+            10.277022988208568
+          ],
+          [
+            105.52463545764341,
+            10.277283221178592
+          ],
+          [
+            105.52573972594605,
+            10.278162013011528
+          ],
+          [
+            105.52584115662793,
+            10.278242732513322
+          ]
+        ]
+      },
+      "properties": {
+        "OBJECTID": 19,
+        "ChieuDai": 1691.9,
+        "DoDoc": null,
+        "DoSau": null,
+        "VatLieu": null,
+        "LoaiCongThoatNuoc": 2,
+        "NgayCapNhat": 1629936000000,
+        "NguoiCapNhat": "Nguyễn Vân Anh",
+        "DonViCapNhat": 2,
+        "DonViQuanLy": 2,
+        "GhiChu": "Cống thoát nước theo quy hoạch chung",
+        "GiaiDoanQuyHoach": 5,
+        "LuuLuong": null,
+        "VanToc": null,
+        "DuongKinh": null,
+        "MaPhuongXa": "31207",
+        "MaQuanHuyen": "923",
+        "MaDoiTuong": null,
+        "MaDuAn": "20.92300000.00001",
+        "SHAPE.STLength()": 1691.9085349524446
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 20,
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.48861732583414,
+            10.310204464927056
+          ],
+          [
+            105.48862220881075,
+            10.310211068611242
+          ],
+          [
+            105.48876253431176,
+            10.310400837788594
+          ],
+          [
+            105.49004041613665,
+            10.312128972780144
+          ]
+        ]
+      },
+      "properties": {
+        "OBJECTID": 20,
+        "ChieuDai": 263.8,
+        "DoDoc": 0.333,
+        "DoSau": null,
+        "VatLieu": null,
+        "LoaiCongThoatNuoc": 2,
+        "NgayCapNhat": 1629936000000,
+        "NguoiCapNhat": "Nguyễn Vân Anh",
+        "DonViCapNhat": 2,
+        "DonViQuanLy": 2,
+        "GhiChu": "Cống thoát nước theo quy hoạch phân khu",
+        "GiaiDoanQuyHoach": 5,
+        "LuuLuong": null,
+        "VanToc": null,
+        "DuongKinh": 300,
+        "MaPhuongXa": "31210",
+        "MaQuanHuyen": "923",
+        "MaDoiTuong": null,
+        "MaDuAn": "20.92300000.00001",
+        "SHAPE.STLength()": 263.82116114712784
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 21,
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.48238960393644,
+            10.305286653676845
+          ],
+          [
+            105.48251579368338,
+            10.305201542218787
+          ],
+          [
+            105.48252141411527,
+            10.305195512257798
+          ],
+          [
+            105.48516929905233,
+            10.302354484542157
+          ],
+          [
+            105.48563306222101,
+            10.301856886757928
+          ]
+        ]
+      },
+      "properties": {
+        "OBJECTID": 21,
+        "ChieuDai": 520.1,
+        "DoDoc": 0.333,
+        "DoSau": null,
+        "VatLieu": null,
+        "LoaiCongThoatNuoc": 2,
+        "NgayCapNhat": 1629936000000,
+        "NguoiCapNhat": "Nguyễn Vân Anh",
+        "DonViCapNhat": 2,
+        "DonViQuanLy": 2,
+        "GhiChu": "Cống thoát nước theo quy hoạch phân khu",
+        "GiaiDoanQuyHoach": 5,
+        "LuuLuong": null,
+        "VanToc": null,
+        "DuongKinh": 300,
+        "MaPhuongXa": "31210",
+        "MaQuanHuyen": "923",
+        "MaDoiTuong": null,
+        "MaDuAn": "20.92300000.00001",
+        "SHAPE.STLength()": 520.1318734898155
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 22,
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.50623940198771,
+            10.294257093326342
+          ],
+          [
+            105.50620212569136,
+            10.294289412164833
+          ],
+          [
+            105.50617856975832,
+            10.294309834597646
+          ],
+          [
+            105.50535094109048,
+            10.295027391255527
+          ]
+        ]
+      },
+      "properties": {
+        "OBJECTID": 22,
+        "ChieuDai": 129.3,
+        "DoDoc": null,
+        "DoSau": null,
+        "VatLieu": null,
+        "LoaiCongThoatNuoc": 2,
+        "NgayCapNhat": 1629936000000,
+        "NguoiCapNhat": "Nguyễn Vân Anh",
+        "DonViCapNhat": 2,
+        "DonViQuanLy": 2,
+        "GhiChu": "Cống thoát nước theo quy hoạch phân khu",
+        "GiaiDoanQuyHoach": 5,
+        "LuuLuong": null,
+        "VanToc": null,
+        "DuongKinh": null,
+        "MaPhuongXa": "31212",
+        "MaQuanHuyen": "923",
+        "MaDoiTuong": null,
+        "MaDuAn": "20.92300000.00001",
+        "SHAPE.STLength()": 129.33972879223745
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 23,
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.50900173489877,
+            10.301533901788224
+          ],
+          [
+            105.50694548673542,
+            10.299652890451046
+          ],
+          [
+            105.50689988202852,
+            10.299611171769548
+          ],
+          [
+            105.50682348013551,
+            10.299541279580257
+          ]
+        ]
+      },
+      "properties": {
+        "OBJECTID": 23,
+        "ChieuDai": 324.8,
+        "DoDoc": 0.333,
+        "DoSau": null,
+        "VatLieu": null,
+        "LoaiCongThoatNuoc": 2,
+        "NgayCapNhat": 1629936000000,
+        "NguoiCapNhat": "Nguyễn Vân Anh",
+        "DonViCapNhat": 2,
+        "DonViQuanLy": 2,
+        "GhiChu": "Cống thoát nước theo quy hoạch phân khu",
+        "GiaiDoanQuyHoach": 5,
+        "LuuLuong": null,
+        "VanToc": null,
+        "DuongKinh": 300,
+        "MaPhuongXa": "31210",
+        "MaQuanHuyen": "923",
+        "MaDoiTuong": null,
+        "MaDuAn": "20.92300000.00001",
+        "SHAPE.STLength()": 324.7987814552856
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 24,
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.51096214917747,
+            10.29930668044277
+          ],
+          [
+            105.50956827582661,
+            10.298182709036318
+          ],
+          [
+            105.50902823480251,
+            10.29731592179463
+          ],
+          [
+            105.5089473994818,
+            10.297186176847747
+          ],
+          [
+            105.50889697172002,
+            10.297105237312257
+          ]
+        ]
+      },
+      "properties": {
+        "OBJECTID": 24,
+        "ChieuDai": 336.9,
+        "DoDoc": 0.333,
+        "DoSau": null,
+        "VatLieu": null,
+        "LoaiCongThoatNuoc": 2,
+        "NgayCapNhat": 1629936000000,
+        "NguoiCapNhat": "Nguyễn Vân Anh",
+        "DonViCapNhat": 2,
+        "DonViQuanLy": 2,
+        "GhiChu": "Cống thoát nước theo quy hoạch phân khu",
+        "GiaiDoanQuyHoach": 5,
+        "LuuLuong": null,
+        "VanToc": null,
+        "DuongKinh": 300,
+        "MaPhuongXa": "31212",
+        "MaQuanHuyen": "923",
+        "MaDoiTuong": null,
+        "MaDuAn": "20.92300000.00001",
+        "SHAPE.STLength()": 336.9125282846423
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 25,
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.50749044718516,
+            10.289936169375197
+          ],
+          [
+            105.50593393073123,
+            10.288543279322184
+          ]
+        ]
+      },
+      "properties": {
+        "OBJECTID": 25,
+        "ChieuDai": 229.8,
+        "DoDoc": 0.333,
+        "DoSau": null,
+        "VatLieu": null,
+        "LoaiCongThoatNuoc": 2,
+        "NgayCapNhat": 1629936000000,
+        "NguoiCapNhat": "Nguyễn Vân Anh",
+        "DonViCapNhat": 2,
+        "DonViQuanLy": 2,
+        "GhiChu": "Cống thoát nước theo quy hoạch phân khu",
+        "GiaiDoanQuyHoach": 5,
+        "LuuLuong": null,
+        "VanToc": null,
+        "DuongKinh": 300,
+        "MaPhuongXa": "31212",
+        "MaQuanHuyen": "923",
+        "MaDoiTuong": null,
+        "MaDuAn": "20.92300000.00001",
+        "SHAPE.STLength()": 229.78485801192383
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 26,
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.50801299500225,
+            10.296078016149316
+          ],
+          [
+            105.50639884184976,
+            10.294420789431333
+          ],
+          [
+            105.50623940198771,
+            10.294257093326342
+          ],
+          [
+            105.5061434875637,
+            10.294208881888418
+          ],
+          [
+            105.50554160744349,
+            10.293906344039288
+          ],
+          [
+            105.50403765436828,
+            10.293150368770652
+          ]
+        ]
+      },
+      "properties": {
+        "OBJECTID": 26,
+        "ChieuDai": 550.3,
+        "DoDoc": 0.333,
+        "DoSau": null,
+        "VatLieu": null,
+        "LoaiCongThoatNuoc": 2,
+        "NgayCapNhat": 1629936000000,
+        "NguoiCapNhat": "Nguyễn Vân Anh",
+        "DonViCapNhat": 2,
+        "DonViQuanLy": 2,
+        "GhiChu": "Cống thoát nước theo quy hoạch phân khu",
+        "GiaiDoanQuyHoach": 5,
+        "LuuLuong": null,
+        "VanToc": null,
+        "DuongKinh": 300,
+        "MaPhuongXa": "31212",
+        "MaQuanHuyen": "923",
+        "MaDoiTuong": null,
+        "MaDuAn": "20.92300000.00001",
+        "SHAPE.STLength()": 550.2720525715837
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 27,
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.50730041752203,
+            10.293388608252727
+          ],
+          [
+            105.50911823495912,
+            10.291769176393364
+          ]
+        ]
+      },
+      "properties": {
+        "OBJECTID": 27,
+        "ChieuDai": 267.8,
+        "DoDoc": 0.333,
+        "DoSau": null,
+        "VatLieu": null,
+        "LoaiCongThoatNuoc": 2,
+        "NgayCapNhat": 1629936000000,
+        "NguoiCapNhat": "Nguyễn Vân Anh",
+        "DonViCapNhat": 2,
+        "DonViQuanLy": 2,
+        "GhiChu": "Cống thoát nước theo quy hoạch phân khu",
+        "GiaiDoanQuyHoach": 5,
+        "LuuLuong": null,
+        "VanToc": null,
+        "DuongKinh": 300,
+        "MaPhuongXa": "31212",
+        "MaQuanHuyen": "923",
+        "MaDoiTuong": null,
+        "MaDuAn": "20.92300000.00001",
+        "SHAPE.STLength()": 267.81870695304315
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 28,
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.51096471803565,
+            10.293491419399015
+          ],
+          [
+            105.50917969553576,
+            10.291826502423806
+          ],
+          [
+            105.50911823495912,
+            10.291769176393364
+          ]
+        ]
+      },
+      "properties": {
+        "OBJECTID": 28,
+        "ChieuDai": 277.8,
+        "DoDoc": 0.333,
+        "DoSau": null,
+        "VatLieu": null,
+        "LoaiCongThoatNuoc": 2,
+        "NgayCapNhat": 1629936000000,
+        "NguoiCapNhat": "Nguyễn Vân Anh",
+        "DonViCapNhat": 2,
+        "DonViQuanLy": 2,
+        "GhiChu": "Cống thoát nước theo quy hoạch phân khu",
+        "GiaiDoanQuyHoach": 5,
+        "LuuLuong": null,
+        "VanToc": null,
+        "DuongKinh": 300,
+        "MaPhuongXa": "31212",
+        "MaQuanHuyen": "923",
+        "MaDoiTuong": null,
+        "MaDuAn": "20.92300000.00001",
+        "SHAPE.STLength()": 277.8306589223569
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 29,
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.51172999650014,
+            10.288835650349913
+          ],
+          [
+            105.51044168989316,
+            10.287004013694256
+          ],
+          [
+            105.5103442745321,
+            10.28686551315747
+          ],
+          [
+            105.51023853513301,
+            10.286715177877735
+          ]
+        ]
+      },
+      "properties": {
+        "OBJECTID": 29,
+        "ChieuDai": 285.8,
+        "DoDoc": 0.333,
+        "DoSau": null,
+        "VatLieu": null,
+        "LoaiCongThoatNuoc": 2,
+        "NgayCapNhat": 1629936000000,
+        "NguoiCapNhat": "Nguyễn Vân Anh",
+        "DonViCapNhat": 2,
+        "DonViQuanLy": 2,
+        "GhiChu": "Cống thoát nước theo quy hoạch phân khu",
+        "GiaiDoanQuyHoach": 5,
+        "LuuLuong": null,
+        "VanToc": null,
+        "DuongKinh": 300,
+        "MaPhuongXa": "31212",
+        "MaQuanHuyen": "923",
+        "MaDoiTuong": null,
+        "MaDuAn": "20.92300000.00001",
+        "SHAPE.STLength()": 285.82000718707747
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 30,
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.51210439054132,
+            10.289331921799038
+          ],
+          [
+            105.51454571344051,
+            10.2871831106953
+          ],
+          [
+            105.51790341854878,
+            10.284501558872915
+          ],
+          [
+            105.517998125461,
+            10.284425921988326
+          ]
+        ]
+      },
+      "properties": {
+        "OBJECTID": 30,
+        "ChieuDai": 843.6,
+        "DoDoc": 0.333,
+        "DoSau": null,
+        "VatLieu": null,
+        "LoaiCongThoatNuoc": 2,
+        "NgayCapNhat": 1629936000000,
+        "NguoiCapNhat": "Nguyễn Vân Anh",
+        "DonViCapNhat": 2,
+        "DonViQuanLy": 2,
+        "GhiChu": "Cống thoát nước theo quy hoạch phân khu",
+        "GiaiDoanQuyHoach": 5,
+        "LuuLuong": null,
+        "VanToc": null,
+        "DuongKinh": 300,
+        "MaPhuongXa": "31212",
+        "MaQuanHuyen": "923",
+        "MaDoiTuong": null,
+        "MaDuAn": "20.92300000.00001",
+        "SHAPE.STLength()": 843.5606222312526
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 31,
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.51310468929161,
+            10.29100929942478
+          ],
+          [
+            105.51308009407468,
+            10.290968056403203
+          ],
+          [
+            105.51219799092217,
+            10.289488878478663
+          ],
+          [
+            105.51210439054132,
+            10.289331921799038
+          ]
+        ]
+      },
+      "properties": {
+        "OBJECTID": 31,
+        "ChieuDai": 215.5,
+        "DoDoc": 0.333,
+        "DoSau": null,
+        "VatLieu": null,
+        "LoaiCongThoatNuoc": 2,
+        "NgayCapNhat": 1629936000000,
+        "NguoiCapNhat": "Nguyễn Vân Anh",
+        "DonViCapNhat": 2,
+        "DonViQuanLy": 2,
+        "GhiChu": "Cống thoát nước theo quy hoạch phân khu",
+        "GiaiDoanQuyHoach": 5,
+        "LuuLuong": null,
+        "VanToc": null,
+        "DuongKinh": 300,
+        "MaPhuongXa": "31212",
+        "MaQuanHuyen": "923",
+        "MaDoiTuong": null,
+        "MaDuAn": "20.92300000.00001",
+        "SHAPE.STLength()": 215.46115587683823
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 32,
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.49851530644958,
+            10.288339037903587
+          ],
+          [
+            105.50127795157844,
+            10.29075812957489
+          ]
+        ]
+      },
+      "properties": {
+        "OBJECTID": 32,
+        "ChieuDai": 403.9,
+        "DoDoc": 0.333,
+        "DoSau": null,
+        "VatLieu": null,
+        "LoaiCongThoatNuoc": 2,
+        "NgayCapNhat": 1629936000000,
+        "NguoiCapNhat": "Nguyễn Vân Anh",
+        "DonViCapNhat": 2,
+        "DonViQuanLy": 2,
+        "GhiChu": "Cống thoát nước theo quy hoạch phân khu",
+        "GiaiDoanQuyHoach": 5,
+        "LuuLuong": null,
+        "VanToc": null,
+        "DuongKinh": 300,
+        "MaPhuongXa": "31212",
+        "MaQuanHuyen": "923",
+        "MaDoiTuong": null,
+        "MaDuAn": "20.92300000.00001",
+        "SHAPE.STLength()": 403.92562406249994
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 33,
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.52757081774936,
+            10.276927870965242
+          ],
+          [
+            105.52490394300635,
+            10.274227389792062
+          ],
+          [
+            105.52483206244645,
+            10.274154602895463
+          ],
+          [
+            105.52483038444784,
+            10.274152904026261
+          ],
+          [
+            105.52482961083055,
+            10.274152120487814
+          ]
+        ]
+      },
+      "properties": {
+        "OBJECTID": 33,
+        "ChieuDai": 429.4,
+        "DoDoc": 0.333,
+        "DoSau": null,
+        "VatLieu": null,
+        "LoaiCongThoatNuoc": 2,
+        "NgayCapNhat": 1629936000000,
+        "NguoiCapNhat": "Nguyễn Vân Anh",
+        "DonViCapNhat": 2,
+        "DonViQuanLy": 2,
+        "GhiChu": "Cống thoát nước theo quy hoạch phân khu",
+        "GiaiDoanQuyHoach": 5,
+        "LuuLuong": null,
+        "VanToc": null,
+        "DuongKinh": 300,
+        "MaPhuongXa": "31207",
+        "MaQuanHuyen": "923",
+        "MaDoiTuong": null,
+        "MaDuAn": "20.92300000.00001",
+        "SHAPE.STLength()": 429.43515431587946
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 34,
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.52482961083055,
+            10.274152120487814
+          ],
+          [
+            105.51971874869628,
+            10.268597796783562
+          ]
+        ]
+      },
+      "properties": {
+        "OBJECTID": 34,
+        "ChieuDai": 831.2,
+        "DoDoc": 0.333,
+        "DoSau": null,
+        "VatLieu": null,
+        "LoaiCongThoatNuoc": 2,
+        "NgayCapNhat": 1629936000000,
+        "NguoiCapNhat": "Nguyễn Vân Anh",
+        "DonViCapNhat": 2,
+        "DonViQuanLy": 2,
+        "GhiChu": "Cống thoát nước theo quy hoạch phân khu",
+        "GiaiDoanQuyHoach": 5,
+        "LuuLuong": null,
+        "VanToc": null,
+        "DuongKinh": 300,
+        "MaPhuongXa": "31207",
+        "MaQuanHuyen": "923",
+        "MaDoiTuong": null,
+        "MaDuAn": "20.92300000.00001",
+        "SHAPE.STLength()": 831.1570885726476
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 35,
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.53202561109497,
+            10.26938071596616
+          ],
+          [
+            105.52935410271108,
+            10.265193399984737
+          ]
+        ]
+      },
+      "properties": {
+        "OBJECTID": 35,
+        "ChieuDai": 547.8,
+        "DoDoc": 0.333,
+        "DoSau": null,
+        "VatLieu": null,
+        "LoaiCongThoatNuoc": 2,
+        "NgayCapNhat": 1629936000000,
+        "NguoiCapNhat": "Nguyễn Vân Anh",
+        "DonViCapNhat": 2,
+        "DonViQuanLy": 2,
+        "GhiChu": "Cống thoát nước theo quy hoạch phân khu",
+        "GiaiDoanQuyHoach": 5,
+        "LuuLuong": null,
+        "VanToc": null,
+        "DuongKinh": 300,
+        "MaPhuongXa": "31207",
+        "MaQuanHuyen": "923",
+        "MaDoiTuong": null,
+        "MaDuAn": "20.92300000.00001",
+        "SHAPE.STLength()": 547.8400210094184
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 36,
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.52837211918836,
+            10.26369585314053
+          ],
+          [
+            105.52622290474109,
+            10.259991996784233
+          ],
+          [
+            105.52604989042484,
+            10.259693827792464
+          ]
+        ]
+      },
+      "properties": {
+        "OBJECTID": 36,
+        "ChieuDai": 510.5,
+        "DoDoc": 0.333,
+        "DoSau": null,
+        "VatLieu": null,
+        "LoaiCongThoatNuoc": 2,
+        "NgayCapNhat": 1629936000000,
+        "NguoiCapNhat": "Nguyễn Vân Anh",
+        "DonViCapNhat": 2,
+        "DonViQuanLy": 2,
+        "GhiChu": "Cống thoát nước theo quy hoạch phân khu",
+        "GiaiDoanQuyHoach": 5,
+        "LuuLuong": null,
+        "VanToc": null,
+        "DuongKinh": 300,
+        "MaPhuongXa": "31216",
+        "MaQuanHuyen": "923",
+        "MaDoiTuong": null,
+        "MaDuAn": "20.92300000.00001",
+        "SHAPE.STLength()": 510.5276391185967
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 37,
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.53557318316824,
+            10.270486426636785
+          ],
+          [
+            105.53578716266287,
+            10.269888411029015
+          ],
+          [
+            105.53574315180886,
+            10.269514263057001
+          ],
+          [
+            105.53572317100051,
+            10.26934440271548
+          ]
+        ]
+      },
+      "properties": {
+        "OBJECTID": 37,
+        "ChieuDai": 130.7,
+        "DoDoc": null,
+        "DoSau": null,
+        "VatLieu": null,
+        "LoaiCongThoatNuoc": 2,
+        "NgayCapNhat": 1629936000000,
+        "NguoiCapNhat": "Nguyễn Vân Anh",
+        "DonViCapNhat": 2,
+        "DonViQuanLy": 2,
+        "GhiChu": "Cống thoát nước theo quy hoạch phân khu",
+        "GiaiDoanQuyHoach": 5,
+        "LuuLuong": null,
+        "VanToc": null,
+        "DuongKinh": null,
+        "MaPhuongXa": "31207",
+        "MaQuanHuyen": "923",
+        "MaDoiTuong": null,
+        "MaDuAn": "20.92300000.00001",
+        "SHAPE.STLength()": 130.7487697498499
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 38,
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.53643320950786,
+            10.270921028400958
+          ],
+          [
+            105.53804605653524,
+            10.269650626464331
+          ],
+          [
+            105.54035943926635,
+            10.267769866944064
+          ]
+        ]
+      },
+      "properties": {
+        "OBJECTID": 38,
+        "ChieuDai": 553.6,
+        "DoDoc": 0.333,
+        "DoSau": null,
+        "VatLieu": null,
+        "LoaiCongThoatNuoc": 2,
+        "NgayCapNhat": 1629936000000,
+        "NguoiCapNhat": "Nguyễn Vân Anh",
+        "DonViCapNhat": 2,
+        "DonViQuanLy": 2,
+        "GhiChu": "Cống thoát nước theo quy hoạch phân khu",
+        "GiaiDoanQuyHoach": 5,
+        "LuuLuong": null,
+        "VanToc": null,
+        "DuongKinh": 300,
+        "MaPhuongXa": "31207",
+        "MaQuanHuyen": "923",
+        "MaDoiTuong": null,
+        "MaDuAn": "20.92300000.00001",
+        "SHAPE.STLength()": 553.5908192801721
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 39,
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.54102056826021,
+            10.267144337433185
+          ],
+          [
+            105.54350321701178,
+            10.265149305036406
+          ],
+          [
+            105.54358334963048,
+            10.265084910397146
+          ]
+        ]
+      },
+      "properties": {
+        "OBJECTID": 39,
+        "ChieuDai": 361.5,
+        "DoDoc": 0.333,
+        "DoSau": null,
+        "VatLieu": null,
+        "LoaiCongThoatNuoc": 2,
+        "NgayCapNhat": 1629936000000,
+        "NguoiCapNhat": "Nguyễn Vân Anh",
+        "DonViCapNhat": 2,
+        "DonViQuanLy": 2,
+        "GhiChu": "Cống thoát nước theo quy hoạch phân khu",
+        "GiaiDoanQuyHoach": 5,
+        "LuuLuong": null,
+        "VanToc": null,
+        "DuongKinh": 300,
+        "MaPhuongXa": "31207",
+        "MaQuanHuyen": "923",
+        "MaDoiTuong": null,
+        "MaDuAn": "20.92300000.00001",
+        "SHAPE.STLength()": 361.51745659633633
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 40,
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.54596064608118,
+            10.26326655375586
+          ],
+          [
+            105.544780629426,
+            10.262130443551982
+          ],
+          [
+            105.54476204278839,
+            10.262112548468165
+          ],
+          [
+            105.54475363802032,
+            10.262107258014533
+          ],
+          [
+            105.5428771892282,
+            10.26092611311192
+          ]
+        ]
+      },
+      "properties": {
+        "OBJECTID": 40,
+        "ChieuDai": 427.8,
+        "DoDoc": 0.333,
+        "DoSau": null,
+        "VatLieu": null,
+        "LoaiCongThoatNuoc": 2,
+        "NgayCapNhat": 1629936000000,
+        "NguoiCapNhat": "Nguyễn Vân Anh",
+        "DonViCapNhat": 2,
+        "DonViQuanLy": 2,
+        "GhiChu": "Cống thoát nước theo quy hoạch phân khu",
+        "GiaiDoanQuyHoach": 5,
+        "LuuLuong": null,
+        "VanToc": null,
+        "DuongKinh": 300,
+        "MaPhuongXa": "31219",
+        "MaQuanHuyen": "923",
+        "MaDoiTuong": null,
+        "MaDuAn": "20.92300000.00001",
+        "SHAPE.STLength()": 427.75963531616543
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 41,
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.55042429305878,
+            10.259572769435369
+          ],
+          [
+            105.54998373816196,
+            10.259162777848903
+          ],
+          [
+            105.5494986076384,
+            10.258794235091692
+          ],
+          [
+            105.54844862085682,
+            10.258106199116364
+          ],
+          [
+            105.54621733893725,
+            10.25690405652966
+          ]
+        ]
+      },
+      "properties": {
+        "OBJECTID": 41,
+        "ChieuDai": 549.4,
+        "DoDoc": 0.333,
+        "DoSau": null,
+        "VatLieu": null,
+        "LoaiCongThoatNuoc": 2,
+        "NgayCapNhat": 1629936000000,
+        "NguoiCapNhat": "Nguyễn Vân Anh",
+        "DonViCapNhat": 2,
+        "DonViQuanLy": 2,
+        "GhiChu": "Cống thoát nước theo quy hoạch phân khu",
+        "GiaiDoanQuyHoach": 5,
+        "LuuLuong": null,
+        "VanToc": null,
+        "DuongKinh": 300,
+        "MaPhuongXa": "31219",
+        "MaQuanHuyen": "923",
+        "MaDoiTuong": null,
+        "MaDuAn": "20.92300000.00001",
+        "SHAPE.STLength()": 549.3652799032955
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 42,
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.53436173964329,
+            10.268681491710828
+          ],
+          [
+            105.53323270640664,
+            10.263369417910509
+          ],
+          [
+            105.53320463599164,
+            10.263237342639693
+          ],
+          [
+            105.53323632022911,
+            10.263017628970752
+          ],
+          [
+            105.53350077134148,
+            10.261183786755982
+          ],
+          [
+            105.53435094701179,
+            10.2594168508896
+          ],
+          [
+            105.53540811501655,
+            10.257834220882073
+          ]
+        ]
+      },
+      "properties": {
+        "OBJECTID": 42,
+        "ChieuDai": 1271.1,
+        "DoDoc": 0.333,
+        "DoSau": null,
+        "VatLieu": null,
+        "LoaiCongThoatNuoc": 2,
+        "NgayCapNhat": 1629936000000,
+        "NguoiCapNhat": "Nguyễn Vân Anh",
+        "DonViCapNhat": 2,
+        "DonViQuanLy": 2,
+        "GhiChu": "Cống thoát nước theo quy hoạch phân khu",
+        "GiaiDoanQuyHoach": 5,
+        "LuuLuong": null,
+        "VanToc": null,
+        "DuongKinh": 300,
+        "MaPhuongXa": "31219",
+        "MaQuanHuyen": "923",
+        "MaDoiTuong": null,
+        "MaDuAn": "20.92300000.00001",
+        "SHAPE.STLength()": 1271.1399969255033
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 43,
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.53779393445299,
+            10.2653056521911
+          ],
+          [
+            105.536481172206,
+            10.264541650498506
+          ],
+          [
+            105.536386847281,
+            10.26448675448594
+          ],
+          [
+            105.53635925484717,
+            10.264412202582369
+          ],
+          [
+            105.53565490134673,
+            10.262509094394908
+          ],
+          [
+            105.53554122536812,
+            10.262201948152985
+          ],
+          [
+            105.53548401652392,
+            10.262047373840312
+          ],
+          [
+            105.53538520136301,
+            10.26162332900548
+          ],
+          [
+            105.53537435207677,
+            10.261576769441419
+          ],
+          [
+            105.53543265318054,
+            10.261455859978401
+          ],
+          [
+            105.53651446535184,
+            10.259212287117128
+          ],
+          [
+            105.53666936561265,
+            10.258891035892074
+          ],
+          [
+            105.53631681661147,
+            10.258127827938564
+          ],
+          [
+            105.5354666276514,
+            10.257853126644356
+          ],
+          [
+            105.53540811501655,
+            10.257834220882073
+          ]
+        ]
+      },
+      "properties": {
+        "OBJECTID": 43,
+        "ChieuDai": 1046.3,
+        "DoDoc": 0.333,
+        "DoSau": null,
+        "VatLieu": null,
+        "LoaiCongThoatNuoc": 2,
+        "NgayCapNhat": 1629936000000,
+        "NguoiCapNhat": "Nguyễn Vân Anh",
+        "DonViCapNhat": 2,
+        "DonViQuanLy": 2,
+        "GhiChu": "Cống thoát nước theo quy hoạch phân khu",
+        "GiaiDoanQuyHoach": 5,
+        "LuuLuong": null,
+        "VanToc": null,
+        "DuongKinh": 300,
+        "MaPhuongXa": "31219",
+        "MaQuanHuyen": "923",
+        "MaDoiTuong": null,
+        "MaDuAn": "20.92300000.00001",
+        "SHAPE.STLength()": 1046.275925252529
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 44,
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.54251497923313,
+            10.260482121097898
+          ],
+          [
+            105.54114180343475,
+            10.259864324140887
+          ],
+          [
+            105.54104158137027,
+            10.259819231949805
+          ],
+          [
+            105.54011205139933,
+            10.259028679186283
+          ],
+          [
+            105.53853492498276,
+            10.25740232294905
+          ],
+          [
+            105.53853418245431,
+            10.257400483360357
+          ],
+          [
+            105.53853113348318,
+            10.25739291718511
+          ]
+        ]
+      },
+      "properties": {
+        "OBJECTID": 44,
+        "ChieuDai": 562,
+        "DoDoc": 0.333,
+        "DoSau": null,
+        "VatLieu": null,
+        "LoaiCongThoatNuoc": 2,
+        "NgayCapNhat": 1629936000000,
+        "NguoiCapNhat": "Nguyễn Vân Anh",
+        "DonViCapNhat": 2,
+        "DonViQuanLy": 2,
+        "GhiChu": "Cống thoát nước theo quy hoạch phân khu",
+        "GiaiDoanQuyHoach": 5,
+        "LuuLuong": null,
+        "VanToc": null,
+        "DuongKinh": 300,
+        "MaPhuongXa": "31219",
+        "MaQuanHuyen": "923",
+        "MaDoiTuong": null,
+        "MaDuAn": "20.92300000.00001",
+        "SHAPE.STLength()": 562.019919142541
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 45,
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.5373037991959,
+            10.258463791814675
+          ],
+          [
+            105.53850067727964,
+            10.257429438697676
+          ],
+          [
+            105.53853418245431,
+            10.257400483360357
+          ],
+          [
+            105.53855289528826,
+            10.257384311706911
+          ]
+        ]
+      },
+      "properties": {
+        "OBJECTID": 45,
+        "ChieuDai": 181.6,
+        "DoDoc": 0.333,
+        "DoSau": null,
+        "VatLieu": null,
+        "LoaiCongThoatNuoc": 2,
+        "NgayCapNhat": 1629936000000,
+        "NguoiCapNhat": "Nguyễn Vân Anh",
+        "DonViCapNhat": 2,
+        "DonViQuanLy": 2,
+        "GhiChu": "Cống thoát nước theo quy hoạch phân khu",
+        "GiaiDoanQuyHoach": 5,
+        "LuuLuong": null,
+        "VanToc": null,
+        "DuongKinh": 300,
+        "MaPhuongXa": "31219",
+        "MaQuanHuyen": "923",
+        "MaDoiTuong": null,
+        "MaDuAn": "20.92300000.00001",
+        "SHAPE.STLength()": 181.59866022613838
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 46,
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.53726192053834,
+            10.261717143183464
+          ],
+          [
+            105.5391899493427,
+            10.260982145421591
+          ],
+          [
+            105.54096665985554,
+            10.259964628660883
+          ],
+          [
+            105.54114180343475,
+            10.259864324140887
+          ]
+        ]
+      },
+      "properties": {
+        "OBJECTID": 46,
+        "ChieuDai": 473.3,
+        "DoDoc": 0.333,
+        "DoSau": null,
+        "VatLieu": null,
+        "LoaiCongThoatNuoc": 2,
+        "NgayCapNhat": 1629936000000,
+        "NguoiCapNhat": "Nguyễn Vân Anh",
+        "DonViCapNhat": 2,
+        "DonViQuanLy": 2,
+        "GhiChu": "Cống thoát nước theo quy hoạch phân khu",
+        "GiaiDoanQuyHoach": 5,
+        "LuuLuong": null,
+        "VanToc": null,
+        "DuongKinh": 300,
+        "MaPhuongXa": "31219",
+        "MaQuanHuyen": "923",
+        "MaDoiTuong": null,
+        "MaDuAn": "20.92300000.00001",
+        "SHAPE.STLength()": 473.2957915230307
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 47,
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.54323898781318,
+            10.255178112157061
+          ],
+          [
+            105.54144098693583,
+            10.255893831740423
+          ],
+          [
+            105.54041719793575,
+            10.256301360355403
+          ],
+          [
+            105.53955890595887,
+            10.256799934099323
+          ],
+          [
+            105.53869093889347,
+            10.25730412376226
+          ],
+          [
+            105.53855289528826,
+            10.257384311706911
+          ]
+        ]
+      },
+      "properties": {
+        "OBJECTID": 47,
+        "ChieuDai": 569.9,
+        "DoDoc": 0.333,
+        "DoSau": null,
+        "VatLieu": null,
+        "LoaiCongThoatNuoc": 2,
+        "NgayCapNhat": 1629936000000,
+        "NguoiCapNhat": "Nguyễn Vân Anh",
+        "DonViCapNhat": 2,
+        "DonViQuanLy": 2,
+        "GhiChu": "Cống thoát nước theo quy hoạch phân khu",
+        "GiaiDoanQuyHoach": 5,
+        "LuuLuong": null,
+        "VanToc": null,
+        "DuongKinh": 300,
+        "MaPhuongXa": "31219",
+        "MaQuanHuyen": "923",
+        "MaDoiTuong": null,
+        "MaDuAn": "20.92300000.00001",
+        "SHAPE.STLength()": 569.9072211327193
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 48,
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.54556694294553,
+            10.256291925765302
+          ],
+          [
+            105.5451190218307,
+            10.255816244001679
+          ],
+          [
+            105.54450978989743,
+            10.254390886475667
+          ],
+          [
+            105.54442196654091,
+            10.25418541440661
+          ],
+          [
+            105.54358062730968,
+            10.252058202699603
+          ]
+        ]
+      },
+      "properties": {
+        "OBJECTID": 48,
+        "ChieuDai": 520.5,
+        "DoDoc": 0.333,
+        "DoSau": null,
+        "VatLieu": null,
+        "LoaiCongThoatNuoc": 2,
+        "NgayCapNhat": 1629936000000,
+        "NguoiCapNhat": "Nguyễn Vân Anh",
+        "DonViCapNhat": 2,
+        "DonViQuanLy": 2,
+        "GhiChu": "Cống thoát nước theo quy hoạch phân khu",
+        "GiaiDoanQuyHoach": 5,
+        "LuuLuong": null,
+        "VanToc": null,
+        "DuongKinh": 300,
+        "MaPhuongXa": "31219",
+        "MaQuanHuyen": "923",
+        "MaDoiTuong": null,
+        "MaDuAn": "20.92300000.00001",
+        "SHAPE.STLength()": 520.4991776055882
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 49,
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.55033519887832,
+            10.227378483043944
+          ],
+          [
+            105.54950928283571,
+            10.229845485733058
+          ],
+          [
+            105.54914241237803,
+            10.230900536313142
+          ],
+          [
+            105.54861685137713,
+            10.23495694687666
+          ],
+          [
+            105.5487434795015,
+            10.235558943547705
+          ],
+          [
+            105.55088592482683,
+            10.235997593640928
+          ],
+          [
+            105.55109583623637,
+            10.236040570734284
+          ]
+        ]
+      },
+      "properties": {
+        "OBJECTID": 49,
+        "ChieuDai": 1194.4,
+        "DoDoc": null,
+        "DoSau": null,
+        "VatLieu": null,
+        "LoaiCongThoatNuoc": 2,
+        "NgayCapNhat": 1629936000000,
+        "NguoiCapNhat": "Nguyễn Vân Anh",
+        "DonViCapNhat": 2,
+        "DonViQuanLy": 2,
+        "GhiChu": "Cống thoát nước theo quy hoạch phân khu",
+        "GiaiDoanQuyHoach": 5,
+        "LuuLuong": null,
+        "VanToc": null,
+        "DuongKinh": null,
+        "MaPhuongXa": "31219",
+        "MaQuanHuyen": "923",
+        "MaDoiTuong": null,
+        "MaDuAn": "20.92300000.00001",
+        "SHAPE.STLength()": 1194.3890283840942
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 50,
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.54854769817446,
+            10.1813742603412
+          ],
+          [
+            105.54888840541481,
+            10.187939548838136
+          ],
+          [
+            105.54939049673351,
+            10.188655110736258
+          ],
+          [
+            105.55101475236742,
+            10.18869545369356
+          ]
+        ]
+      },
+      "properties": {
+        "OBJECTID": 50,
+        "ChieuDai": 1001.5,
+        "DoDoc": 0.333,
+        "DoSau": null,
+        "VatLieu": null,
+        "LoaiCongThoatNuoc": 2,
+        "NgayCapNhat": 1629936000000,
+        "NguoiCapNhat": "Nguyễn Vân Anh",
+        "DonViCapNhat": 2,
+        "DonViQuanLy": 2,
+        "GhiChu": "Cống thoát nước theo quy hoạch phân khu",
+        "GiaiDoanQuyHoach": 5,
+        "LuuLuong": null,
+        "VanToc": null,
+        "DuongKinh": 300,
+        "MaPhuongXa": "31227",
+        "MaQuanHuyen": "923",
+        "MaDoiTuong": null,
+        "MaDuAn": "20.92300000.00001",
+        "SHAPE.STLength()": 1001.5079551605661
+      }
+    }
+  ],
+  "metadata": {
+    "source": "https://gisserver.cantho.gov.vn:6443/arcgis/rest/services/_SoXayDung/QHPK_CongThoatNuoc/MapServer/0/query",
+    "total_features": 2062,
+    "service_path": "_SoXayDung/QHPK_CongThoatNuoc/MapServer",
+    "layer_id": 0
+  }
+}

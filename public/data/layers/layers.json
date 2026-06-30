@@ -116,5 +116,55 @@
       "sourceLabel": "ArcGIS Query URL",
       "city": "Cần Thơ"
     }
+  },
+  {
+    "layerId": "layer-cong-thoat-nuoc-rg",
+    "layerName": "Cống thoát nước (Rút gọn)",
+    "sourceType": "remote-geojson",
+    "geojsonUrl": "/data/layers/simplified_cong_thoat_nuoc.geojson",
+    "visible": true,
+    "style": {
+      "lineColor": "#0284c7",
+      "lineWidth": 4,
+      "lineHeight": 4,
+      "lineProfile": "circle",
+      "lineZ": -1,
+      "pinColor": "#0284c7",
+      "elevationOffset": 1
+    },
+    "model3D": {
+      "enabled": false,
+      "modelUrl": "/data/models/default-point.glb",
+      "scale": { "x": 2, "y": 2, "z": 2 },
+      "rotation": { "x": 0, "y": 0, "z": 0 },
+      "altitudeOffset": 0
+    },
+    "metadata": {
+      "sourceLabel": "Quy hoạch phân khu",
+      "city": "Cần Thơ"
+    }
+  },
+  {
+    "layerId": "layer-ho-ga-rg",
+    "layerName": "Hố ga (Rút gọn)",
+    "sourceType": "remote-geojson",
+    "geojsonUrl": "/data/layers/simplified_ho_ga.geojson",
+    "visible": true,
+    "style": {
+      "pinColor": "#eab308",
+      "pinIcon": "circle",
+      "elevationOffset": 5
+    },
+    "model3D": {
+      "enabled": true,
+      "modelUrl": "/data/models/manhole_3.glb",
+      "scale": { "x": 15, "y": 15, "z": 15 },
+      "rotation": { "x": 0, "y": 0, "z": 0 },
+      "altitudeOffset": 0.1
+    },
+    "metadata": {
+      "sourceLabel": "Quy hoạch phân khu",
+      "city": "Cần Thơ"
+    }
   }
 ]
