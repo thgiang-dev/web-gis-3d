@@ -91,11 +91,12 @@ export async function renderSpatialFeatures(
         if (g.attributes.appGraphicRole === 'model') {
           modelGraphics.push(g)
         } else {
-          if (feature.geometryType === 'Point') {
+          const geomType = g.geometry?.type
+          if (geomType === 'point') {
             baseGraphicsByGeom.point.push(g)
-          } else if (feature.geometryType === 'LineString' || feature.geometryType === 'MultiLineString') {
+          } else if (geomType === 'polyline') {
             baseGraphicsByGeom.polyline.push(g)
-          } else {
+          } else if (geomType === 'polygon') {
             baseGraphicsByGeom.polygon.push(g)
           }
         }
@@ -128,26 +129,6 @@ export async function renderSpatialFeatures(
       { name: "styleKey", alias: "Style Key", type: "string" as const }
     ]
 
-    const popupTemplate = {
-      title: "{appFeatureName}",
-      content: (event: any) => {
-        const graphic = event.graphic
-        const props = graphic.attributes?.originalProperties || {}
-        let tableHtml = '<table class="esri-widget" style="width:100%; border-collapse:collapse; font-family:var(--font-primary); font-size:13px; margin-top:8px;">'
-        tableHtml += '<tbody>'
-        const entries = Object.entries(props)
-        if (entries.length === 0) {
-          tableHtml += '<tr><td style="padding:6px; color:var(--color-text-muted); text-align:center;">Không có dữ liệu thuộc tính.</td></tr>'
-        } else {
-          for (const [key, val] of entries) {
-            tableHtml += `<tr style="border-bottom:1px solid rgba(15,23,42,0.06);"><td style="padding:6px 8px; font-weight:bold; color:var(--color-text-secondary); width:40%;">${key}</td><td style="padding:6px 8px; color:var(--color-text-primary); word-break:break-all;">${typeof val === 'object' ? JSON.stringify(val) : val}</td></tr>`
-          }
-        }
-        tableHtml += '</tbody></table>'
-        return tableHtml
-      }
-    }
-
     const createUniqueValueRenderer = (graphics: Graphic[]) => {
       const uniqueStyleKeys = new Set<string>()
       const uniqueValueInfos: any[] = []
@@ -176,13 +157,13 @@ export async function renderSpatialFeatures(
         title: `${features[0].name || 'Polygons'}`,
         source: baseGraphicsByGeom.polygon,
         fields: fields,
+        outFields: ["*"],
         objectIdField: "OBJECTID",
         geometryType: "polygon",
         renderer: createUniqueValueRenderer(baseGraphicsByGeom.polygon),
         elevationInfo: {
           mode: "on-the-ground"
-        },
-        popupTemplate: popupTemplate
+        }
       })
       createdLayers.push(polygonLayer)
     }
@@ -194,13 +175,13 @@ export async function renderSpatialFeatures(
         title: `${features[0].name || 'Lines'}`,
         source: baseGraphicsByGeom.polyline,
         fields: fields,
+        outFields: ["*"],
         objectIdField: "OBJECTID",
         geometryType: "polyline",
         renderer: createUniqueValueRenderer(baseGraphicsByGeom.polyline),
         elevationInfo: {
           mode: "relative-to-ground"
-        },
-        popupTemplate: popupTemplate
+        }
       })
       createdLayers.push(polylineLayer)
     }
@@ -213,13 +194,13 @@ export async function renderSpatialFeatures(
         title: `${features[0].name || 'Points'}`,
         source: baseGraphicsByGeom.point,
         fields: fields,
+        outFields: ["*"],
         objectIdField: "OBJECTID",
         geometryType: "point",
         renderer: createUniqueValueRenderer(baseGraphicsByGeom.point),
         elevationInfo: {
           mode: "relative-to-ground"
         },
-        popupTemplate: popupTemplate,
         featureReduction: isClusteringEnabled ? { type: "selection" } as any : null
       })
       createdLayers.push(pointLayer)
@@ -232,13 +213,13 @@ export async function renderSpatialFeatures(
         title: `${features[0].name || '3D Models'}`,
         source: modelGraphics,
         fields: fields,
+        outFields: ["*"],
         objectIdField: "OBJECTID",
         geometryType: "point",
         renderer: createUniqueValueRenderer(modelGraphics),
         elevationInfo: {
           mode: "relative-to-ground"
-        },
-        popupTemplate: popupTemplate
+        }
       })
       createdLayers.push(modelLayer)
     }
