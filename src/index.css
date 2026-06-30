@@ -5,8 +5,8 @@
 :root {
   /* Colors - Premium Light Glassmorphism (White Theme) with Blue Accents */
   --color-bg: #f8fafc; /* Slate 50 */
-  --color-surface: rgba(255, 255, 255, 0.88); /* White glass with 88% opacity for better readability */
-  --color-surface-alt: rgba(241, 245, 249, 0.80); /* Slate 100 glass with 80% opacity */
+  --color-surface: rgba(255, 255, 255, 0.93); /* Opaque white glass (93%) to guarantee readability even if blur fails */
+  --color-surface-alt: rgba(241, 245, 249, 0.88); /* Slate 100 glass with 88% opacity */
   --color-surface-elevated: rgba(255, 255, 255, 0.9);
   --color-border: rgba(15, 23, 42, 0.08); /* Subtle dark border for light glass */
   --color-border-dark: rgba(15, 23, 42, 0.15);
@@ -152,12 +152,29 @@ button:disabled {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: transparent;
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+  padding: var(--space-1);
+  gap: var(--space-1);
+  box-shadow: var(--shadow-md);
+  width: 38px;
+  top: 75px;
+  position: fixed;
+  overflow: hidden;
+}
+
+.left-map-toolbar::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
   background: var(--color-surface);
   backdrop-filter: blur(28px) saturate(160%) brightness(1.02);
   -webkit-backdrop-filter: blur(28px) saturate(160%) brightness(1.02);
   transform: translateZ(0);
   will-change: transform, backdrop-filter;
-  border: 1px solid var(--color-border);
+}
   border-radius: 20px;
   padding: var(--space-1);
   gap: var(--space-1);
@@ -195,7 +212,7 @@ button:disabled {
 
 /* Popup Glassmorphism */
 .esri-popup__main-container {
-  background-color: var(--color-surface) !important;
+  background-color: rgba(255, 255, 255, 0.95) !important;
   backdrop-filter: blur(28px) saturate(160%) brightness(1.02) !important;
   -webkit-backdrop-filter: blur(28px) saturate(160%) brightness(1.02) !important;
   transform: translateZ(0) !important;
@@ -442,14 +459,24 @@ label {
   align-items: center;
   justify-content: space-between;
   padding: 0 var(--space-6);
-  background: rgba(255, 255, 255, 0.90); /* Highly polished white glass with 90% opacity */
+  background: transparent;
+  color: var(--color-text-primary);
+  border-bottom: 1px solid rgba(15, 23, 42, 0.06);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.02), 0 1px 2px -1px rgba(0, 0, 0, 0.02);
+  overflow: hidden;
+}
+
+.top-bar::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: rgba(255, 255, 255, 0.95); /* Highly polished white glass with 95% opacity */
   backdrop-filter: blur(28px) saturate(160%) brightness(1.02);
   -webkit-backdrop-filter: blur(28px) saturate(160%) brightness(1.02);
   transform: translateZ(0);
   will-change: transform, backdrop-filter;
-  color: var(--color-text-primary);
-  border-bottom: 1px solid rgba(15, 23, 42, 0.06);
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.02), 0 1px 2px -1px rgba(0, 0, 0, 0.02);
+}
 }
 
 /* Premium top accent line */
@@ -518,12 +545,25 @@ label {
   width: var(--panel-width);
   display: flex;
   flex-direction: column;
+  background: transparent;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+  transition: transform var(--transition-normal), opacity var(--transition-normal);
+}
+
+.floating-panel::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
   background: var(--color-surface);
   backdrop-filter: blur(28px) saturate(160%) brightness(1.02);
   -webkit-backdrop-filter: blur(28px) saturate(160%) brightness(1.02);
   transform: translateZ(0);
   will-change: transform, backdrop-filter;
-  border: 1px solid var(--color-border);
+}
   border-radius: var(--radius-xl);
   box-shadow: var(--shadow-md);
   overflow: hidden;
@@ -886,12 +926,26 @@ label {
   z-index: 30;
   display: flex;
   align-items: center;
+  background: transparent;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-full);
+  box-shadow: var(--shadow-md);
+  padding: 4px var(--space-3);
+  gap: 4px;
+  overflow: hidden;
+}
+
+.map-toolbar::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
   background: var(--color-surface);
   backdrop-filter: blur(28px) saturate(160%) brightness(1.02);
   -webkit-backdrop-filter: blur(28px) saturate(160%) brightness(1.02);
   transform: translateZ(0);
   will-change: transform, backdrop-filter;
-  border: 1px solid var(--color-border);
+}
   border-radius: var(--radius-full);
   box-shadow: var(--shadow-md);
   padding: 4px var(--space-3);
@@ -968,12 +1022,29 @@ label {
   width: 36px;
   height: 36px;
   border-radius: var(--radius-full); /* Round button to match theme */
+  background: transparent;
+  border: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+}
+
+.toggle-button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
   background: var(--color-surface);
   backdrop-filter: blur(28px) saturate(160%) brightness(1.02);
   -webkit-backdrop-filter: blur(28px) saturate(160%) brightness(1.02);
   transform: translateZ(0);
   will-change: transform, backdrop-filter;
-  border: 1px solid var(--color-border);
+}
   display: flex;
   align-items: center;
   justify-content: center;
