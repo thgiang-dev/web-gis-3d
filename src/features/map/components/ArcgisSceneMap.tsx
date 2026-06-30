@@ -4,6 +4,7 @@ import ArcGISMap from '@arcgis/core/Map'
 import Camera from '@arcgis/core/Camera'
 import type Graphic from '@arcgis/core/Graphic'
 import GraphicsLayer from '@arcgis/core/layers/GraphicsLayer'
+import FeatureLayer from '@arcgis/core/layers/FeatureLayer'
 import SceneView from '@arcgis/core/views/SceneView'
 import { useEffect, useRef } from 'react'
 import type { ArcgisMapContexts } from '../hooks/useArcgisScene'
@@ -66,6 +67,7 @@ export function ArcgisSceneMap({ onReady, onFeatureClick, onMapClick }: ArcgisSc
     const graphicIndex = new globalThis.Map<string, Graphic[]>()
     const layerFeatureIndex = new globalThis.Map<string, Set<string>>()
     const entityFeatureIndex = new globalThis.Map<string, Set<string>>()
+    const featureLayersMap = new globalThis.Map<string, FeatureLayer[]>()
 
     onReady({
       layer: {
@@ -76,6 +78,7 @@ export function ArcgisSceneMap({ onReady, onFeatureClick, onMapClick }: ArcgisSc
         graphicIndex,
         layerFeatureIndex,
         entityFeatureIndex,
+        featureLayersMap,
       },
       entity: {
         view,
@@ -85,6 +88,7 @@ export function ArcgisSceneMap({ onReady, onFeatureClick, onMapClick }: ArcgisSc
         graphicIndex,
         layerFeatureIndex,
         entityFeatureIndex,
+        featureLayersMap,
       },
     })
 

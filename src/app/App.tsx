@@ -49,7 +49,12 @@ export default function App() {
   const [leftPanelOpen, setLeftPanelOpen] = useState(false)
   const [editor3DEnabled, setEditor3DEnabled] = useState(false)
   const [sliceEnabled, setSliceEnabled] = useState(false)
+  const [clusteringEnabled, setClusteringEnabled] = useState(true)
   const [pickedCoordinate, setPickedCoordinate] = useState<{ longitude: number; latitude: number; z: number } | null>(null)
+
+  useEffect(() => {
+    ;(window as any).clusteringEnabled = clusteringEnabled
+  }, [clusteringEnabled])
 
   useEffect(() => {
     if (mapReady && contextsRef.current?.layer.view) {
@@ -234,6 +239,8 @@ export default function App() {
     [contextsRef, registerFeatures, unregisterBySource],
   )
 
+
+
   const renderEntityToMap = useCallback(
     async (entity: SpatialEntityConfig) => {
       const contexts = contextsRef.current
@@ -324,7 +331,15 @@ export default function App() {
     const nextLayer = { ...layer, visible: !layer.visible }
     await saveLayer(nextLayer)
     setLayers((current) => current.map((item) => (item.layerId === layer.layerId ? nextLayer : item)))
-    await loadLayerToMap(nextLayer)
+    
+    const featureLayers = contextsRef.current?.layer.featureLayersMap.get(layer.layerId)
+    if (featureLayers && featureLayers.length > 0) {
+      featureLayers.forEach((lyr) => {
+        lyr.visible = nextLayer.visible
+      })
+    } else {
+      await loadLayerToMap(nextLayer)
+    }
   }
 
   async function updateLayer(layer: LayerConfig) {
@@ -377,10 +392,51 @@ export default function App() {
     unregisterBySource('entity', entityId)
   }
 
-  function zoomLayer(layerId: string) {
+  const handleToggleClustering = () => {
+    const nextVal = !clusteringEnabled
+    setClusteringEnabled(nextVal)
+    ;(window as any).clusteringEnabled = nextVal
+    
+    const contexts = contextsRef.current
+    if (contexts?.layer.featureLayersMap) {
+      contexts.layer.featureLayersMap.forEach((layers) => {
+        layers.forEach((lyr) => {
+          if (lyr.declaredClass === 'esri.layers.FeatureLayer' && lyr.id.endsWith('-points')) {
+            ;(lyr as any).featureReduction = nextVal ? { type: "selection" } : null
+          }
+        })
+      })
+    }
+  }
+
+  async function zoomLayer(layerId: string) {
+    const contexts = contextsRef.current
+    if (!contexts) {
+      return
+    }
+
+    const featureLayers = contexts.layer.featureLayersMap.get(layerId)
+    if (featureLayers && featureLayers.length > 0) {
+      const extents = await Promise.all(
+        featureLayers.map(async (lyr) => {
+          const response = await lyr.queryExtent()
+          return response.extent
+        })
+      )
+      const validExtents = extents.filter((ext: any) => ext !== null) as any[]
+      if (validExtents.length > 0) {
+        let fullExtent = validExtents[0].clone()
+        for (let i = 1; i < validExtents.length; i++) {
+          fullExtent = fullExtent.union(validExtents[i])
+        }
+        await contexts.layer.view.goTo(fullExtent, { duration: 800 })
+        return
+      }
+    }
+
     const feature = [...featureRegistryRef.current.values()].find((item) => item.layerId === layerId)
-    if (feature && contextsRef.current) {
-      void zoomToFeature(contextsRef.current.layer, feature.id)
+    if (feature) {
+      void zoomToFeature(contexts.layer, feature.id)
     }
   }
 
@@ -498,9 +554,11 @@ export default function App() {
         onReloadVisible={() => void renderAllVisible(true)}
         onToggleEditor3D={() => setEditor3DEnabled((value) => !value)}
         onToggleSlice={() => setSliceEnabled((value) => !value)}
+        onToggleClustering={handleToggleClustering}
         loadedFeatureCount={loadedFeatureCount}
         editor3DEnabled={editor3DEnabled}
         sliceEnabled={sliceEnabled}
+        clusteringEnabled={clusteringEnabled}
       />
 
       {/* ── Left Floating Panel ── */}

@@ -1,4 +1,4 @@
-import { Crosshair, Eraser, Home, Pencil, RefreshCw, Scissors } from 'lucide-react'
+import { Crosshair, Eraser, Home, Pencil, RefreshCw, Scissors, Boxes } from 'lucide-react'
 
 type MapToolbarProps = {
   onResetView: () => void
@@ -6,9 +6,11 @@ type MapToolbarProps = {
   onReloadVisible: () => void
   onToggleEditor3D: () => void
   onToggleSlice: () => void
+  onToggleClustering: () => void
   loadedFeatureCount: number
   editor3DEnabled: boolean
   sliceEnabled: boolean
+  clusteringEnabled: boolean
 }
 
 export function MapToolbar({
@@ -17,9 +19,11 @@ export function MapToolbar({
   onReloadVisible,
   onToggleEditor3D,
   onToggleSlice,
+  onToggleClustering,
   loadedFeatureCount,
   editor3DEnabled,
   sliceEnabled,
+  clusteringEnabled,
 }: MapToolbarProps) {
   return (
     <div className="map-toolbar">
@@ -47,6 +51,14 @@ export function MapToolbar({
         title="Bật/tắt Slice"
       >
         <Scissors size={16} />
+      </button>
+      <button
+        className={`icon-button ${clusteringEnabled ? 'active' : ''}`}
+        type="button"
+        onClick={onToggleClustering}
+        title="Bật/tắt Gom cụm (Clustering)"
+      >
+        <Boxes size={16} />
       </button>
       <div className="map-toolbar-divider" />
       <div className="map-toolbar-info">

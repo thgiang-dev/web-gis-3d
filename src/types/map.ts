@@ -2,6 +2,7 @@ import type { Model3DConfig, ResolvedModel3DConfig } from './model3d'
 import type Graphic from '@arcgis/core/Graphic'
 import type GraphicsLayer from '@arcgis/core/layers/GraphicsLayer'
 import type SceneView from '@arcgis/core/views/SceneView'
+import type FeatureLayer from '@arcgis/core/layers/FeatureLayer'
 
 export type GeometryType =
   | 'Point'
@@ -76,6 +77,8 @@ export type MapRenderContext = {
   layerFeatureIndex: Map<string, Set<string>>
   /** entityId → Set<featureId> */
   entityFeatureIndex: Map<string, Set<string>>
+  /** layerId → FeatureLayer[] */
+  featureLayersMap: Map<string, FeatureLayer[]>
 }
 
 export type RenderResult = {

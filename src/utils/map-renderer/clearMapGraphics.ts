@@ -7,6 +7,17 @@ export function clearMapGraphics(ctx: MapRenderContext): void {
   ctx.graphicIndex.clear()
   ctx.layerFeatureIndex.clear()
   ctx.entityFeatureIndex.clear()
+
+  // Destroy all FeatureLayers to prevent memory leaks
+  if (ctx.featureLayersMap) {
+    ctx.featureLayersMap.forEach((layers) => {
+      layers.forEach((lyr) => {
+        ctx.view.map?.remove(lyr)
+        lyr.destroy()
+      })
+    })
+    ctx.featureLayersMap.clear()
+  }
 }
 
 /**
@@ -19,6 +30,18 @@ export function removeFeaturesBySource(
   sourceType: SpatialSourceType,
   sourceId: string,
 ): void {
+  // Remove and destroy FeatureLayers if it's a layer source
+  if (sourceType === 'layer' && ctx.featureLayersMap) {
+    const layers = ctx.featureLayersMap.get(sourceId)
+    if (layers) {
+      layers.forEach((lyr) => {
+        ctx.view.map?.remove(lyr)
+        lyr.destroy()
+      })
+      ctx.featureLayersMap.delete(sourceId)
+    }
+  }
+
   const featureIndex = sourceType === 'layer' ? ctx.layerFeatureIndex : ctx.entityFeatureIndex
   const featureIds = featureIndex.get(sourceId)
   if (!featureIds) {

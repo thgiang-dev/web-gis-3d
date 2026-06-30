@@ -15,12 +15,24 @@ type HighlightSymbol = PointSymbol3D | SimpleMarkerSymbol | SimpleLineSymbol | S
 
 export { createMapPinSymbol3D }
 
+// Symbol caches to avoid duplicate allocations
+const pinSymbol3DCache = new Map<string, PointSymbol3D>()
+const lineSymbol3DCache = new Map<string, LineSymbol3D>()
+const polygonSymbolCache = new Map<string, SimpleFillSymbol>()
+const modelSymbol3DCache = new Map<string, PointSymbol3D>()
+
 /**
  * Pin symbol đẹp — dùng PointSymbol3D + IconSymbol3DLayer cho SceneView,
  * hiển thị pin nổi trên mặt đất.
  */
 export function createPinSymbol3D(style: ResolvedSpatialStyle): PointSymbol3D {
-  return createMapPinSymbol3D(style.pinColor, 34)
+  const key = style.pinColor || '#ff0000'
+  let cached = pinSymbol3DCache.get(key)
+  if (!cached) {
+    cached = createMapPinSymbol3D(key, 34)
+    pinSymbol3DCache.set(key, cached)
+  }
+  return cached
 }
 
 /**
@@ -46,19 +58,25 @@ export function createPinSymbol(style: ResolvedSpatialStyle): SimpleMarkerSymbol
  */
 export function createLineSymbol3D(style: ResolvedSpatialStyle): LineSymbol3D {
   const profile = mapLineProfile(style.lineProfile)
-  return new LineSymbol3D({
-    symbolLayers: [
-      new PathSymbol3DLayer({
-        profile,
-        material: { color: style.lineColor },
-        width: style.lineWidth,
-        height: style.lineHeight,
-        join: 'round',
-        cap: style.lineCap === 'square' ? 'square' : 'round',
-        // profileRotation: "heading" — line xoay theo hướng, mặc định
-      }),
-    ],
-  })
+  const key = `${style.lineColor || '#0000ff'}_${style.lineWidth || 2}_${style.lineHeight || 2}_${profile}_${style.lineCap || 'round'}`
+  
+  let cached = lineSymbol3DCache.get(key)
+  if (!cached) {
+    cached = new LineSymbol3D({
+      symbolLayers: [
+        new PathSymbol3DLayer({
+          profile,
+          material: { color: style.lineColor },
+          width: style.lineWidth,
+          height: style.lineHeight,
+          join: 'round',
+          cap: style.lineCap === 'square' ? 'square' : 'round',
+        }),
+      ],
+    })
+    lineSymbol3DCache.set(key, cached)
+  }
+  return cached
 }
 
 /**
@@ -75,13 +93,20 @@ export function createLineSymbol(style: ResolvedSpatialStyle): SimpleLineSymbol 
 }
 
 export function createPolygonSymbol(style: ResolvedSpatialStyle): SimpleFillSymbol {
-  return new SimpleFillSymbol({
-    color: withOpacity(style.polygonFillColor, style.polygonOpacity),
-    outline: {
-      color: style.polygonOutlineColor,
-      width: 1.5,
-    },
-  })
+  const key = `${style.polygonFillColor || '#ff0000'}_${style.polygonOpacity ?? 0.5}_${style.polygonOutlineColor || '#ffffff'}`
+  
+  let cached = polygonSymbolCache.get(key)
+  if (!cached) {
+    cached = new SimpleFillSymbol({
+      color: withOpacity(style.polygonFillColor, style.polygonOpacity),
+      outline: {
+        color: style.polygonOutlineColor,
+        width: 1.5,
+      },
+    })
+    polygonSymbolCache.set(key, cached)
+  }
+  return cached
 }
 
 export function createHighlightSymbol(feature: NormalizedSpatialFeature): HighlightSymbol {
@@ -130,20 +155,26 @@ export function createModelSymbol3D(model3D: ResolvedModel3DConfig): PointSymbol
 
   const scale = model3D.scale ?? { x: 5, y: 5, z: 5 }
   const rotation = model3D.rotation ?? { x: 0, y: 0, z: 0 }
+  const key = `${model3D.modelUrl}_${scale.x}_${scale.y}_${scale.z}_${rotation.x}_${rotation.y}_${rotation.z}`
 
-  return new PointSymbol3D({
-    symbolLayers: [
-      new ObjectSymbol3DLayer({
-        resource: { href: model3D.modelUrl },
-        width: scale.x,
-        depth: scale.y,
-        height: scale.z,
-        heading: rotation.z,
-        tilt: rotation.x,
-        roll: rotation.y,
-      }),
-    ],
-  })
+  let cached = modelSymbol3DCache.get(key)
+  if (!cached) {
+    cached = new PointSymbol3D({
+      symbolLayers: [
+        new ObjectSymbol3DLayer({
+          resource: { href: model3D.modelUrl },
+          width: scale.x,
+          depth: scale.y,
+          height: scale.z,
+          heading: rotation.z,
+          tilt: rotation.x,
+          roll: rotation.y,
+        }),
+      ],
+    })
+    modelSymbol3DCache.set(key, cached)
+  }
+  return cached
 }
 
 function withOpacity(hex: string, opacity: number): number[] | string {
