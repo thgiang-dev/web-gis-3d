@@ -168,8 +168,6 @@ export function createModelSymbol3D(model3D: ResolvedModel3DConfig): PointSymbol
       symbolLayers: [
         new ObjectSymbol3DLayer({
           resource: { href: model3D.modelUrl },
-          width: scale.x,
-          depth: scale.y,
           height: scale.z,
           heading: rotation.z,
           tilt: rotation.x,

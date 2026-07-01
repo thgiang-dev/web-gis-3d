@@ -38,6 +38,9 @@ export function createEditableModelLayers(features: NormalizedSpatialFeature[]):
         { name: 'NAME', alias: 'Name', type: 'string' },
         { name: 'TYPE', alias: 'Type', type: 'string' },
         { name: 'SIZE', alias: 'Size', type: 'double' },
+        { name: 'SIZE_X', alias: 'Size X', type: 'double' },
+        { name: 'SIZE_Y', alias: 'Size Y', type: 'double' },
+        { name: 'SIZE_Z', alias: 'Size Z', type: 'double' },
         { name: 'ROTATION', alias: 'Rotation', type: 'double' },
         { name: 'ELEVATION', alias: 'Elevation', type: 'double' },
         { name: 'MODEL_URL', alias: 'Model URL', type: 'string' },
@@ -49,16 +52,14 @@ export function createEditableModelLayers(features: NormalizedSpatialFeature[]):
           symbolLayers: [
             new ObjectSymbol3DLayer({
               resource: { href: modelUrl },
-              width: 5,
-              depth: 5,
-              height: 5,
+              height: 1,
             }),
           ],
         }),
         visualVariables: [
           {
             type: 'size',
-            field: 'SIZE',
+            field: 'SIZE_Z',
             axis: 'height',
             valueUnit: 'meters',
           },

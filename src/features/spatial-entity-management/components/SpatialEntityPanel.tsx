@@ -13,6 +13,7 @@ type SpatialEntityPanelProps = {
   onDeleteEntity: (entityId: string) => void
   onToggleEntity: (entity: SpatialEntityConfig) => void
   onZoomEntity: (entityId: string) => void
+  onChangeDraft?: (draft: any | null) => void
   onClose?: () => void
 }
 
@@ -56,6 +57,7 @@ export function SpatialEntityPanel({
   onZoomEntity,
   pickedCoordinate,
   onClearPickedCoordinate,
+  onChangeDraft,
   onClose,
 }: SpatialEntityPanelProps) {
   const [isFormOpen, setIsFormOpen] = useState(false)
@@ -63,6 +65,15 @@ export function SpatialEntityPanel({
   const [draft, setDraft] = useState<DraftEntity>(defaultDraft)
   const [formError, setFormError] = useState<string | null>(null)
   const containerRef = useRef<HTMLDivElement>(null)
+
+  // Notify parent of draft updates to render real-time map previews
+  useEffect(() => {
+    if (isFormOpen) {
+      onChangeDraft?.(draft)
+    } else {
+      onChangeDraft?.(null)
+    }
+  }, [draft, isFormOpen, onChangeDraft])
 
   useEffect(() => {
     if (isFormOpen && containerRef.current) {

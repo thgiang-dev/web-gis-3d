@@ -35,11 +35,12 @@ export function ArcgisSceneMap({ onReady, onFeatureClick, onMapClick }: ArcgisSc
     const entityGraphicsLayer = new GraphicsLayer({ id: 'app-entity-graphics', title: 'Entity graphics' })
     const modelLayer = new GraphicsLayer({ id: 'app-model-graphics', title: '3D models' })
     const highlightLayer = new GraphicsLayer({ id: 'app-highlight-graphics', title: 'Selection highlight' })
+    const previewGraphicsLayer = new GraphicsLayer({ id: 'app-preview-graphics', title: 'Interactive preview' })
 
     const map = new ArcGISMap({
       basemap: DEFAULT_BASEMAP,
       ground: DEFAULT_GROUND,
-      layers: [layerGraphicsLayer, entityGraphicsLayer, modelLayer, highlightLayer],
+      layers: [layerGraphicsLayer, entityGraphicsLayer, modelLayer, highlightLayer, previewGraphicsLayer],
     })
 
     const view = new SceneView({

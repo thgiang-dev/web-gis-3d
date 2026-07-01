@@ -2,15 +2,17 @@ import type Editor from '@arcgis/core/widgets/Editor'
 import type FeatureLayer from '@arcgis/core/layers/FeatureLayer'
 import type Graphic from '@arcgis/core/Graphic'
 import type SceneView from '@arcgis/core/views/SceneView'
-import { useEffect } from 'react'
+import { useEffect, useRef, type MutableRefObject } from 'react'
 import type { NormalizedSpatialFeature } from '../../../types/map'
 import type { SpatialEntityConfig } from '../../../types/spatialEntity'
 import { createEditableModelLayers } from '../../../utils/map-editor/createEditableModelLayer'
 import { updateEntityFromEditedFeature } from '../../../utils/map-editor/entityFeatureAdapter'
+import type { ArcgisMapContexts } from './useArcgisScene'
 
 type UseEditable3DModelsOptions = {
   enabled: boolean
   view: SceneView | null
+  contextsRef: MutableRefObject<ArcgisMapContexts | null>
   features: NormalizedSpatialFeature[]
   entities: SpatialEntityConfig[]
   onEntityEdited: (entity: SpatialEntityConfig) => void
@@ -19,22 +21,75 @@ type UseEditable3DModelsOptions = {
 export function useEditable3DModels({
   enabled,
   view,
+  contextsRef,
   features,
   entities,
   onEntityEdited,
 }: UseEditable3DModelsOptions): void {
+  // Use refs to avoid re-triggering the main useEffect when state updates
+  const featuresRef = useRef(features)
+  const entitiesRef = useRef(entities)
+  const onEntityEditedRef = useRef(onEntityEdited)
+
   useEffect(() => {
-    if (!enabled || !view || features.length === 0) {
+    featuresRef.current = features
+  }, [features])
+
+  useEffect(() => {
+    entitiesRef.current = entities
+  }, [entities])
+
+  useEffect(() => {
+    onEntityEditedRef.current = onEntityEdited
+  }, [onEntityEdited])
+
+  useEffect(() => {
+    const activeFeatures = featuresRef.current
+    if (!enabled || !view || activeFeatures.length === 0) {
       return undefined
     }
 
+    let isCancelled = false
+    const contexts = contextsRef.current
+    const activeEditedFeatureIds = new Set(activeFeatures.map((f) => f.id))
+    
+    // 1. Set global window flag to prevent newly rendered static features from being visible
+    ;(window as any).activeEditedFeatureIds = activeEditedFeatureIds
+
+    // 2. Temporarily hide original graphics in memory (both point pins and 3D models)
+    activeEditedFeatureIds.forEach((featureId) => {
+      contexts?.layer.graphicIndex.get(featureId)?.forEach((g) => {
+        g.visible = false
+      })
+      contexts?.entity.graphicIndex.get(featureId)?.forEach((g) => {
+        g.visible = false
+      })
+    })
+
+    // 3. Temporarily hide static graphics in FeatureLayers already added to the map by applying definitionExpression
+    const idsString = [...activeEditedFeatureIds].map(id => `'${id}'`).join(',')
+    const expression = `appFeatureId NOT IN (${idsString})`
+    
+    view.map?.layers.forEach((layer) => {
+      if (layer.declaredClass === 'esri.layers.FeatureLayer') {
+        const fl = layer as FeatureLayer
+        if (fl.fields?.some(f => f.name === 'appFeatureId')) {
+          fl.definitionExpression = expression
+        }
+      }
+    })
+
     let editor: Editor | null = null
-    const editableLayers: FeatureLayer[] = createEditableModelLayers(features)
+    const editableLayers: FeatureLayer[] = createEditableModelLayers(activeFeatures)
     const handles: Array<{ remove: () => void }> = []
-    const entityById = new Map(entities.map((entity) => [entity.entityId, entity]))
 
     async function mountEditor() {
       const { default: EditorWidget } = await import('@arcgis/core/widgets/Editor')
+      
+      if (isCancelled) {
+        return
+      }
+
       if (!view?.map || editableLayers.length === 0) {
         return
       }
@@ -46,7 +101,11 @@ export function useEditable3DModels({
             const objectIds = event.updatedFeatures
               .map((feature) => feature.objectId)
               .filter((objectId): objectId is number => typeof objectId === 'number')
-            void syncEditedObjectIds(layer, objectIds, entityById, onEntityEdited)
+            
+            // Retrieve latest entities and callback from refs inside the event handler
+            const latestEntities = entitiesRef.current
+            const entityById = new Map(latestEntities.map((entity) => [entity.entityId, entity]))
+            void syncEditedObjectIds(layer, objectIds, entityById, onEntityEditedRef.current)
           }),
         )
       })
@@ -60,13 +119,56 @@ export function useEditable3DModels({
           updateEnabled: true,
           deleteEnabled: false,
         })),
+        supportingWidgetDefaults: {
+          sketch: {
+            defaultUpdateOptions: {
+              tool: 'transform',
+              enableRotation: true,
+              enableScaling: true,
+              preserveAspectRatio: true,
+            },
+          },
+        } as any,
       })
+
+      if (isCancelled) {
+        editor.destroy()
+        editableLayers.forEach((layer) => view.map?.remove(layer))
+        handles.forEach((handle) => handle.remove())
+        return
+      }
+
       view.ui.add(editor, 'top-right')
     }
 
     void mountEditor()
 
     return () => {
+      isCancelled = true
+
+      // 1. Restore visibility of original static graphics
+      activeEditedFeatureIds.forEach((featureId) => {
+        contexts?.layer.graphicIndex.get(featureId)?.forEach((g) => {
+          g.visible = true
+        })
+        contexts?.entity.graphicIndex.get(featureId)?.forEach((g) => {
+          g.visible = true
+        })
+      })
+
+      // 2. Clear definitionExpression on all FeatureLayers
+      view.map?.layers.forEach((layer) => {
+        if (layer.declaredClass === 'esri.layers.FeatureLayer') {
+          const fl = layer as FeatureLayer
+          if (fl.fields?.some(f => f.name === 'appFeatureId')) {
+            fl.definitionExpression = null as any
+          }
+        }
+      })
+
+      // 3. Clear global window flag
+      ;(window as any).activeEditedFeatureIds = undefined
+
       handles.forEach((handle) => handle.remove())
       if (editor) {
         view.ui.remove(editor)
@@ -74,7 +176,7 @@ export function useEditable3DModels({
       }
       editableLayers.forEach((layer) => view.map?.remove(layer))
     }
-  }, [enabled, entities, features, onEntityEdited, view])
+  }, [enabled, view, contextsRef])
 }
 
 async function syncEditedObjectIds(

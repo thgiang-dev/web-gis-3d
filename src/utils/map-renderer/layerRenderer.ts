@@ -88,6 +88,11 @@ export async function renderSpatialFeatures(
         }
         g.attributes.styleKey = styleKey
 
+        const activeEditedFeatureIds = (window as any).activeEditedFeatureIds
+        if (activeEditedFeatureIds && activeEditedFeatureIds.has(feature.id)) {
+          g.visible = false
+        }
+
         if (g.attributes.appGraphicRole === 'model') {
           modelGraphics.push(g)
         } else {
@@ -150,6 +155,13 @@ export async function renderSpatialFeatures(
       })
     }
 
+    const activeEditedFeatureIds = (window as any).activeEditedFeatureIds
+    let definitionExpression: string | undefined = undefined
+    if (activeEditedFeatureIds && activeEditedFeatureIds.size > 0) {
+      const idsString = [...activeEditedFeatureIds].map(id => `'${id}'`).join(',')
+      definitionExpression = `appFeatureId NOT IN (${idsString})`
+    }
+
     // A. Polygons (Bottom)
     if (baseGraphicsByGeom.polygon.length > 0) {
       const polygonLayer = new FeatureLayer({
@@ -163,7 +175,8 @@ export async function renderSpatialFeatures(
         renderer: createUniqueValueRenderer(baseGraphicsByGeom.polygon),
         elevationInfo: {
           mode: "on-the-ground"
-        }
+        },
+        definitionExpression
       })
       createdLayers.push(polygonLayer)
     }
@@ -182,7 +195,8 @@ export async function renderSpatialFeatures(
         elevationInfo: {
           mode: "relative-to-ground",
           offset: (features[0]?.style as any)?.elevationOffset ?? 0
-        }
+        },
+        definitionExpression
       })
       createdLayers.push(polylineLayer)
     }
@@ -203,7 +217,8 @@ export async function renderSpatialFeatures(
           mode: "relative-to-ground",
           offset: (features[0]?.style as any)?.elevationOffset ?? 0
         },
-        featureReduction: isClusteringEnabled ? { type: "selection" } as any : null
+        featureReduction: isClusteringEnabled ? { type: "selection" } as any : null,
+        definitionExpression
       })
       createdLayers.push(pointLayer)
     }
@@ -222,7 +237,8 @@ export async function renderSpatialFeatures(
         elevationInfo: {
           mode: "relative-to-ground",
           offset: (features[0]?.style as any)?.elevationOffset ?? 0
-        }
+        },
+        definitionExpression
       })
       createdLayers.push(modelLayer)
     }
@@ -259,6 +275,11 @@ export async function renderSpatialFeatures(
       graphicsCount += featureGraphics.length
 
       featureGraphics.forEach((g) => {
+        const activeEditedFeatureIds = (window as any).activeEditedFeatureIds
+        if (activeEditedFeatureIds && activeEditedFeatureIds.has(feature.id)) {
+          g.visible = false
+        }
+
         if (g.attributes?.appGraphicRole === 'model') {
           chunkModelGraphics.push(g)
         } else {

@@ -22,8 +22,9 @@ import { normalizeLayerGeojson, normalizeSpatialEntity } from '../services/geojs
 import type { LayerConfig } from '../types/layer'
 import type { InspectorFeature, NormalizedSpatialFeature } from '../types/map'
 import type { SpatialEntityConfig } from '../types/spatialEntity'
-import { removeFeaturesBySource } from '../utils/map-renderer/clearMapGraphics'
 import { clearHighlight, highlightFeature, renderSpatialFeatures, zoomToFeature } from '../utils/map-renderer/layerRenderer'
+import { updateMapPreview } from '../utils/map-renderer/previewRenderer'
+import { removeFeaturesBySource } from '../utils/map-renderer/clearMapGraphics'
 
 type LeftTab = 'layers' | 'entities'
 
@@ -501,6 +502,7 @@ export default function App() {
   useEditable3DModels({
     enabled: editor3DEnabled,
     view: mapReady ? contextsRef.current?.layer.view ?? null : null,
+    contextsRef,
     features: editableModelFeatures,
     entities,
     onEntityEdited: upsertEntity,
@@ -619,6 +621,7 @@ export default function App() {
               onDeleteEntity={(entityId) => void removeEntity(entityId)}
               onToggleEntity={(entity) => void toggleEntity(entity)}
               onZoomEntity={zoomItem}
+              onChangeDraft={(draft) => updateMapPreview(contextsRef.current, draft)}
               onClose={() => setLeftPanelOpen(false)}
             />
           )}
