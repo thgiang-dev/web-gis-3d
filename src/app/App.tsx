@@ -28,6 +28,16 @@ import { removeFeaturesBySource } from '../utils/map-renderer/clearMapGraphics'
 
 type LeftTab = 'layers' | 'entities'
 
+// Migrate localStorage config if version is outdated to load new default layers & entities
+const CONFIG_VERSION = 'v4'
+if (typeof window !== 'undefined') {
+  if (window.localStorage.getItem('frontend-gis.app-version') !== CONFIG_VERSION) {
+    window.localStorage.removeItem('frontend-gis.layers')
+    window.localStorage.removeItem('frontend-gis.entities')
+    window.localStorage.setItem('frontend-gis.app-version', CONFIG_VERSION)
+  }
+}
+
 export default function App() {
   const { contextsRef, setContexts } = useArcgisScene()
   const [heading, setHeading] = useState(0)

@@ -1,135 +1,19 @@
 [
   {
-    "layerId": "local-cay-xanh",
-    "layerName": "Cây xanh mẫu",
-    "description": "Layer Point lấy từ GeoJSON local.",
-    "sourceType": "local-geojson",
-    "geojsonFile": "/data/geojson/sample-point.geojson",
-    "geometryType": "Point",
-    "visible": true,
-    "style": {
-      "pinColor": "#00897b",
-      "pinIcon": "tree",
-      "lineColor": "#00897b",
-      "lineWidth": 2,
-      "lineHeight": 2,
-      "lineProfile": "circle",
-      "lineZ": 0,
-      "polygonFillColor": "#00897b",
-      "polygonOutlineColor": "#003865",
-      "polygonOpacity": 0.35
-    },
-    "model3D": {
-      "enabled": false,
-      "modelUrl": "/data/models/default-point.glb",
-      "scale": { "x": 6, "y": 6, "z": 6 },
-      "rotation": { "x": 0, "y": 0, "z": 0 },
-      "altitudeOffset": 0
-    },
-    "metadata": {
-      "owner": "frontend-only-demo",
-      "sourceLabel": "Local GeoJSON"
-    }
-  },
-  {
-    "layerId": "local-cong-thoat-nuoc",
-    "layerName": "Cống/đường mẫu",
-    "description": "Layer LineString và MultiLineString mẫu.",
-    "sourceType": "local-geojson",
-    "geojsonFile": "/data/geojson/sample-line.geojson",
+    "layerId": "layer-cong-thoat-nuoc",
+    "layerName": "Cống thoát nước",
+    "description": "Dịch vụ bản đồ đường ống cống thoát nước chính thức từ GIS Server Cần Thơ.",
+    "sourceType": "remote-geojson",
+    "geojsonUrl": "https://gisserver.cantho.gov.vn:6443/arcgis/rest/services/_SoXayDung/QHPK_CongThoatNuoc/MapServer/0/query?where=1%3D1&outFields=*&f=geojson",
     "geometryType": "LineString",
     "visible": true,
     "style": {
-      "pinColor": "#004c97",
-      "pinIcon": "route",
-      "lineColor": "#004c97",
-      "lineWidth": 4,
-      "lineHeight": 4,
-      "lineProfile": "circle",
-      "lineZ": 0,
-      "lineCap": "round"
-    },
-    "model3D": {
-      "enabled": false
-    },
-    "metadata": {
-      "owner": "frontend-only-demo",
-      "sourceLabel": "Local GeoJSON"
-    }
-  },
-  {
-    "layerId": "local-dia-phan",
-    "layerName": "Địa phận mẫu",
-    "description": "Layer Polygon và MultiPolygon mẫu.",
-    "sourceType": "local-geojson",
-    "geojsonFile": "/data/geojson/sample-polygon.geojson",
-    "geometryType": "Polygon",
-    "visible": true,
-    "style": {
-      "pinColor": "#f57c00",
-      "pinIcon": "polygon",
-      "lineColor": "#f57c00",
-      "lineWidth": 2,
-      "lineHeight": 2,
-      "lineProfile": "circle",
-      "lineZ": 0,
-      "polygonFillColor": "#f57c00",
-      "polygonOutlineColor": "#003865",
-      "polygonOpacity": 0.28
-    },
-    "model3D": {
-      "enabled": false
-    },
-    "metadata": {
-      "owner": "frontend-only-demo",
-      "sourceLabel": "Local GeoJSON"
-    }
-  },
-  {
-    "layerId": "qhc-cay-xanh",
-    "layerName": "QHC Cây Xanh",
-    "description": "Remote ArcGIS query endpoint. Có thể lỗi CORS tùy cấu hình server.",
-    "sourceType": "arcgis-query-url",
-    "geojsonUrl": "https://gisserver.cantho.gov.vn:6443/arcgis/rest/services/_SoXayDung/QHC_CayXanh/MapServer/0/query",
-    "geometryType": "Point",
-    "visible": false,
-    "style": {
-      "pinColor": "#2e7d32",
-      "pinIcon": "tree",
-      "lineColor": "#2e7d32",
-      "lineWidth": 2,
-      "lineHeight": 2,
-      "lineProfile": "circle",
-      "lineZ": 0,
-      "polygonFillColor": "#2e7d32",
-      "polygonOutlineColor": "#003865",
-      "polygonOpacity": 0.3
-    },
-    "model3D": {
-      "enabled": false,
-      "modelUrl": "/data/models/default-point.glb",
-      "scale": { "x": 5, "y": 5, "z": 5 },
-      "rotation": { "x": 0, "y": 0, "z": 0 },
-      "altitudeOffset": 0
-    },
-    "metadata": {
-      "sourceLabel": "ArcGIS Query URL",
-      "city": "Cần Thơ"
-    }
-  },
-  {
-    "layerId": "layer-cong-thoat-nuoc-rg",
-    "layerName": "Cống thoát nước (Rút gọn)",
-    "sourceType": "remote-geojson",
-    "geojsonUrl": "/data/layers/simplified_cong_thoat_nuoc.geojson",
-    "visible": true,
-    "style": {
-      "lineColor": "#0284c7",
+      "lineColor": "#250af0",
       "lineWidth": 4,
       "lineHeight": 4,
       "lineProfile": "circle",
       "lineZ": -1,
-      "pinColor": "#0284c7",
+      "pinColor": "#250af0",
       "elevationOffset": 1
     },
     "model3D": {
@@ -140,18 +24,20 @@
       "altitudeOffset": 0
     },
     "metadata": {
-      "sourceLabel": "Quy hoạch phân khu",
+      "sourceLabel": "GIS Server Cần Thơ",
       "city": "Cần Thơ"
     }
   },
   {
-    "layerId": "layer-ho-ga-rg",
-    "layerName": "Hố ga (Rút gọn)",
+    "layerId": "layer-ho-ga",
+    "layerName": "Hố ga",
+    "description": "Dịch vụ bản đồ hố ga chính thức từ GIS Server Cần Thơ.",
     "sourceType": "remote-geojson",
-    "geojsonUrl": "/data/layers/simplified_ho_ga.geojson",
+    "geojsonUrl": "https://gisserver.cantho.gov.vn:6443/arcgis/rest/services/_SoXayDung/QHPK_HoGa/MapServer/0/query?where=1%3D1&outFields=*&f=geojson",
+    "geometryType": "Point",
     "visible": true,
     "style": {
-      "pinColor": "#eab308",
+      "pinColor": "#8c00ff",
       "pinIcon": "circle",
       "elevationOffset": 5
     },
@@ -163,7 +49,7 @@
       "altitudeOffset": 0.1
     },
     "metadata": {
-      "sourceLabel": "Quy hoạch phân khu",
+      "sourceLabel": "GIS Server Cần Thơ",
       "city": "Cần Thơ"
     }
   }

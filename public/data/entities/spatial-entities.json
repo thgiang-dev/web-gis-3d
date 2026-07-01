@@ -1,35 +1,35 @@
 [
   {
-    "entityId": "entity-tram-quan-trac",
-    "entityName": "Trạm quan trắc độc lập",
-    "description": "Point entity không thuộc layer.",
+    "entityId": "entity-hoi-truong-rua",
+    "entityName": "Hội trường Rùa",
+    "description": "Hội trường rùa - CTU",
     "geometry": {
       "type": "Point",
-      "coordinates": [105.7826, 10.0315, 4]
+      "coordinates": [105.769491, 10.029262, 16]
     },
     "position": {
-      "longitude": 105.7826,
-      "latitude": 10.0315,
-      "z": 4
+      "longitude": 105.769491,
+      "latitude": 10.029262,
+      "z": 16
     },
     "visible": true,
     "style": {
-      "pinColor": "#c62828",
-      "pinIcon": "sensor",
-      "lineColor": "#c62828",
-      "lineWidth": 3,
-      "lineHeight": 3,
+      "pinColor": "#ea1031",
+      "pinIcon": "circle",
+      "lineColor": "#ea1031",
+      "lineWidth": 4,
+      "lineHeight": 4,
       "lineProfile": "circle",
       "lineZ": 0,
-      "polygonFillColor": "#c62828",
+      "polygonFillColor": "#ea1031",
       "polygonOutlineColor": "#003865",
       "polygonOpacity": 0.3
     },
     "model3D": {
-      "enabled": false,
-      "modelUrl": "/data/models/default-point.glb",
-      "scale": { "x": 5, "y": 5, "z": 5 },
-      "rotation": { "x": 0, "y": 0, "z": 0 },
+      "enabled": true,
+      "modelUrl": "/data/models/assembly_room.glb",
+      "scale": { "x": 15, "y": 15, "z": 15 },
+      "rotation": { "x": 0, "y": 0, "z": 285 },
       "altitudeOffset": 0
     },
     "metadata": {
@@ -38,71 +38,41 @@
     }
   },
   {
-    "entityId": "entity-tuyen-cap-nuoc",
-    "entityName": "Tuyến cấp nước độc lập",
-    "description": "Line entity có pin đại diện tại centroid.",
+    "entityId": "entity-nha-thi-dau",
+    "entityName": "Nhà thi đấu ĐH Cần Thơ",
+    "description": "Nhà thi đấu - CTU",
     "geometry": {
-      "type": "LineString",
-      "coordinates": [
-        [105.7742, 10.0321],
-        [105.7796, 10.0312],
-        [105.785, 10.0336]
-      ]
+      "type": "Point",
+      "coordinates": [105.769280, 10.032758, 0]
+    },
+    "position": {
+      "longitude": 105.769280,
+      "latitude": 10.032758,
+      "z": 0
     },
     "visible": true,
     "style": {
-      "pinColor": "#0079c1",
-      "pinIcon": "line",
-      "lineColor": "#0079c1",
-      "lineWidth": 5,
-      "lineHeight": 5,
-      "lineProfile": "quad",
-      "lineZ": 0,
-      "lineCap": "square"
-    },
-    "model3D": {
-      "enabled": false
-    },
-    "metadata": {
-      "owner": "demo",
-      "status": "planned"
-    }
-  },
-  {
-    "entityId": "entity-khu-du-an",
-    "entityName": "Khu dự án độc lập",
-    "description": "Polygon entity mẫu.",
-    "geometry": {
-      "type": "Polygon",
-      "coordinates": [
-        [
-          [105.7882, 10.0247],
-          [105.7938, 10.0244],
-          [105.7944, 10.0204],
-          [105.7891, 10.0196],
-          [105.7882, 10.0247]
-        ]
-      ]
-    },
-    "visible": true,
-    "style": {
-      "pinColor": "#f57c00",
-      "pinIcon": "area",
-      "lineColor": "#f57c00",
-      "lineWidth": 2,
-      "lineHeight": 2,
+      "pinColor": "#c2e4eb",
+      "pinIcon": "circle",
+      "lineColor": "#c2e4eb",
+      "lineWidth": 4,
+      "lineHeight": 4,
       "lineProfile": "circle",
       "lineZ": 0,
-      "polygonFillColor": "#f57c00",
-      "polygonOutlineColor": "#004c97",
-      "polygonOpacity": 0.24
+      "polygonFillColor": "#c2e4eb",
+      "polygonOutlineColor": "#003865",
+      "polygonOpacity": 0.3
     },
     "model3D": {
-      "enabled": false
+      "enabled": true,
+      "modelUrl": "/data/models/sporting_event_hall.glb",
+      "scale": { "x": 20, "y": 20, "z": 20 },
+      "rotation": { "x": 0, "y": 0, "z": 110 },
+      "altitudeOffset": 0
     },
     "metadata": {
       "owner": "demo",
-      "status": "draft"
+      "status": "active"
     }
   }
 ]
